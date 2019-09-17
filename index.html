@@ -10,7 +10,13 @@
       <a>
         <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
       </a>
-      <!-- Здесь будет форма поиска-->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label class="visually-hidden" for="form-search">Поле поиска</label>
+          <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
+        </p>
+      </form>
+      <a href="#">Закладки:0</a>
       <a href="#">Корзина:0</a>
       <a href="#">Оформить заказ</a>
       <p>
@@ -54,11 +60,10 @@
     <main>
 
       <section>
-        <h2>Товары и услуги компании «Техномарт»</h2>
+        <h2 class="visually-hidden">Товары и услуги компании «Техномарт»</h2>
         <ul>
           <li>
             <p>Материалы</p>
-            <p>New</p>
             <a href="#">На любой вкус</a>
           </li>
           <li>
@@ -78,17 +83,29 @@
             <a href="#">Бесплатно</a>
           </li>
         </ul>
-        <div>
-          <p>Дрели<br>
-             Соседям на радость!<br>
-         </p>
-         <figure>
-           <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели"></a>
-         </figure>
-         <a href="#">Открыть каталог</a>
-         <button type="button">Назад</button>
-         <button type="button">Вперед</button>
-        </div>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Слайдер с товарами</h2>
+          <figure>
+            <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+            <figcaption>
+              <p>Дрели<br>
+                Соседям на радость!<br>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/slider-perforator.jpg" width="620" height="266" alt="Дрели">
+            <figcaption>
+              <p>Перфораторы<br>
+                Настоящие мужские игрушки<br>
+              </p>
+            </figcaption>
+          </figure>
+        <a href="catalog.html">Открыть каталог</a>
+        <button type="button">Назад</button>
+        <button type="button">Вперед</button>
       </section>
 
       <section>
@@ -122,7 +139,6 @@
           <li>
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-            <p>New</p>
             <p>12500 P.</p>
             <a href="#">Купить</a>
             <a href="#">В закладки</a>
@@ -183,12 +199,45 @@
           Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <!--Здесь будет чекбокс-->
-        <p>Доставка</p>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-        </p>
-        <img src="img/delivery.png" width="468" height="261" alt="Доставка">
+        <form>
+          <ul>
+            <li>
+              <input type="radio" name="servise-group"  value="delivery" id="filter-delivery" checked>
+                <label for="filter-delivery">Доставка</label>
+            </li>
+            <li>
+              <input type="radio" name="servise-group" value="guarantee" id="filter-guarantee">
+                <label for="filter-guarantee">Гарантия</label>
+            </li>
+            <li>
+              <input type="radio" name="servise-group" value="credit" id="filter-credit">
+              <label for="filter-credit">Кредит</label>
+            </li>
+          </ul>
+        </form>
+        <div>
+          <p>Доставка</p>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+          </p>
+          <img src="img/delivery.png" width="468" height="261" alt="Доставка">
+        </div>
+        <div class="visually-hidden">
+          <p>Гарантия</p>
+          <p>
+            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.
+          </p>
+          <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
+        </div>
+        <div class="visually-hidden">
+          <p>Кредит</p>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+          </p>
+          <img src="img/credit.png" width="465" height="285" alt="Кредит">
+        </div>
+        <a href="#">Отправить заявку</a>
       </section>
 
       <section>
@@ -278,8 +327,37 @@
       </p>
       <p>
         Разработано -
-        <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </footer>
+
+    <section>
+      <h2 class="visually-hidden">Форма отбратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-mail">Ваш e-mail:</label>
+          <input id="user-mail" type="text" name="mail" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <input id="user-message" type="text" name="massage" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-popap.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>

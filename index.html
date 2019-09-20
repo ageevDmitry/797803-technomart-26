@@ -3,33 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <a>
+      <a class="header-logo">
         <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
       </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
         <p>
           <label class="visually-hidden" for="form-search">Поле поиска</label>
           <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
         </p>
       </form>
-      <a href="#">Закладки:0</a>
-      <a href="#">Корзина:0</a>
-      <a href="#">Оформить заказ</a>
-      <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
-      <ul>
+
+      <div class="buy-link">
+        <a href="#">Закладки:0</a>
+        <a href="#">Корзина:0</a>
+        <a href="#">Оформить заказ</a>
+      </div>
+      <a class="phone" href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+      <address class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
+      <ul class="user-navigation">
         <li>
-          <button type="button">Войти</button>
+          <a class="login-link" href="#">Войти</a>
         </li>
         <li>
-          <button type="button">Регистрация</button>
+          <a class="registration-link" href="#">Регистрация</a>
         </li>
       </ul>
-      <nav>
+      <nav class="site-navigation">
         <ul>
           <li>
             <a href="#">Главная</a>
@@ -57,52 +64,52 @@
     </header>
     <main>
 
-      <section>
+      <section class="features">
         <h2 class="visually-hidden">Товары и услуги компании «Техномарт»</h2>
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="feature-item new">
             <p>Материалы</p>
-            <a href="#">На любой вкус</a>
+            <a class="button" href="#">На любой вкус</a>
           </li>
-          <li>
+          <li class="feature-item">
             <p>Инструмент</p>
-            <a href="#">На все случаи</a>
+            <a class="button" href="#">На все случаи</a>
           </li>
-          <li>
+          <li class="feature-item">
             <p>Техника</p>
-            <a href="#">Для стройки</a>
+            <a class="button" href="#">Для стройки</a>
           </li>
-          <li>
+          <li class="feature-item">
             <p>Скидки 50%</p>
-            <a href="#">На 350 товаров</a>
+            <a class="button" href="#">На 350 товаров</a>
           </li>
-          <li>
+          <li class="feature-item">
             <p>Доставка</p>
-            <a href="#">Бесплатно</a>
+            <a class="button" href="#">Бесплатно</a>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section class="slider">
         <h2 class="visually-hidden">Слайдер с товарами</h2>
-        <ul>
-          <li>
+        <ul class="slider-content">
+          <li class="drill">
             <p>Дрели</p>
             <p>Соседям на радость!</p>
             <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
           </li>
-          <li>
+          <li class="perforator">
             <p>Перфораторы</p>
             <p>Настоящие мужские игрушки</p>
             <img src="img/slider-perforator.jpg" width="620" height="266" alt="Дрели">
           </li>
         </ul>
-        <a href="catalog.html">Открыть каталог</a>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
+        <a class="button slider-catalog" href="catalog.html">Открыть каталог</a>
+        <button class="button slider-back" type="button">Назад</button>
+        <button class="button slider-next" type="button">Вперед</button>
       </section>
 
-      <section>
+      <section >
         <h2>Популярные товары:</h2>
         <a href="#">Все популярные товары</a>
         <ul>

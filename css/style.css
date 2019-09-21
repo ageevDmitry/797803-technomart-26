@@ -71,7 +71,8 @@ a {
   background-color: #f4f7f9;
 }
 
-.header ul {
+.header ul,
+.features ul {
   list-style: none;
 }
 
@@ -223,3 +224,53 @@ h1 {
   color: #a8abaf;
   background-color: #1d2739
 }
+
+.features {
+  font-family: 'Cuprum';
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.features a {
+  color: #ffffff;
+  background-color: #e5e5e5
+}
+
+.features a:hover {
+  background-color: #cccccc
+}
+
+.features a:active {
+  background-color: #b2b2b2
+}
+
+.feature-materials {
+  background-color: #ffbf47;
+}
+
+.feature-tools {
+  background-color: #3bbce3;
+}
+
+.feature-technique {
+  background-color: #dc91d8;
+}
+
+.feature-sales {
+  background-color: #8ed78f;
+}
+
+.feature-delivery {
+  background-color: #ffc047;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+

@@ -55,6 +55,8 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: 'Cuprum', Arial, sans-serif;
 }
 
 a {
@@ -62,7 +64,6 @@ a {
 }
 
 .header {
-  font-family: 'Cuprum';
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -72,12 +73,12 @@ a {
 }
 
 .header ul,
-.features ul {
+.features ul,
+.popular-goods ul {
   list-style: none;
 }
 
 h1 {
-  font-family: 'Cuprum';
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -226,7 +227,6 @@ h1 {
 }
 
 .features {
-  font-family: 'Cuprum';
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -266,6 +266,96 @@ h1 {
   background-color: #ffc047;
 }
 
+/* Здесь будет стилизация слайдера */
+
+.container-popular-goods {
+  background-color: #f9f5f0;
+}
+
+.container-popular-goods h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.container-popular-goods a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.container-popular-goods a:hover {
+  background-color: #ca2c37;
+}
+
+.container-popular-goods a:active {
+  background-color: #ba2732;
+}
+
+.goods-list li {
+  border: 1px solid #e4e4e4;
+}
+
+.goods-list li:hover {
+  box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);
+  border: 1px solid #ffffff;
+}
+
+.goods-list h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000
+}
+
+.good-legacy-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through
+}
+
+.good-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643
+}
+
+.good-buy {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #63a63e;
+  border-radius: 2px
+}
+
+.good-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.good-buy:active {
+  background-color: #518534;
+}
+
+.good-bookmark {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  border: 3px solid #63a63e;
+  border-radius: 2px
+}
+
+.good-bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.good-bookmark:active {
+  color: #c1c6ce;
+  border: 3px solid #c1c6ce;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -273,4 +363,7 @@ h1 {
   height: 1px;
   margin: -1px;
 }
+
+
+
 

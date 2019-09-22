@@ -75,7 +75,8 @@ a {
 .header ul,
 .features ul,
 .popular-goods ul,
-.popular-productions ul {
+.popular-productions ul,
+.footer ul {
   list-style: none;
 }
 
@@ -191,38 +192,38 @@ h1 {
   color: #32425c;
 }
 
-.login-link,
-.registration-link {
+.header-login-link,
+.header-registration-link {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.login-link:hover,
-.registration-link:hover {
+.header-login-link:hover,
+.header-registration-link:hover {
   color: #ee3643;
 }
 
-.login-link:active,
-.registration-link:active {
+.header-login-link:active,
+.header-registration-link:active {
   color: #cacaca;
 }
 
-.site-navigation {
+.header-site-navigation {
   background-color: #32425c;
   box-shadow: 0px 5px 0px 0px #293449;
 }
 
-.site-navigation a {
+.header-site-navigation a {
   color: #ffffff
 }
 
-.site-navigation a:hover {
+.header-site-navigation a:hover {
   background-color: #293449
 }
 
-.site-navigation a:active {
+.header-site-navigation a:active {
   color: #a8abaf;
   background-color: #1d2739
 }
@@ -417,6 +418,8 @@ h1 {
   color: #000000;
 }
 
+/* Здесь будет стилизация слайдера */
+
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
@@ -444,6 +447,82 @@ h1 {
 
 .contacts button:active {
   background-color: #ba2732;
+}
+
+.footer {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.container-footer-down {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.container-footer-down a {
+  color: #e0b976;
+}
+
+.container-footer-down a:hover {
+  text-decoration: underline;
+}
+
+.container-footer-down a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.container-footer-logo {
+  background-color: #ee3643;
+  box-shadow: 0px 5px 0px 0px #b52933;
+}
+
+.footer-navigation-upper a {
+  color: #f1f5f7
+}
+
+.footer-navigation-upper a:hover {
+  text-decoration: underline
+}
+
+.footer-navigation-upper a:active {
+  text-decoration: none;
+  color: #929caa
+}
+
+.footer-navigation-down a {
+  color: #ffd180
+}
+
+.footer-navigation-down a:hover {
+  text-decoration: underline
+}
+
+.footer-navigation-down a:active {
+  text-decoration: none;
+  color: #ad956f
+}
+
+.footer-address,
+.footer-phone a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff
 }
 
 .visually-hidden {

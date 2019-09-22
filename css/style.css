@@ -63,6 +63,10 @@ a {
   text-decoration: none;
 }
 
+body ul {
+  list-style: none;
+}
+
 .header {
   font-size: 17px;
   line-height: 18px;
@@ -70,14 +74,6 @@ a {
   color: #ffffff;
 
   background-color: #f4f7f9;
-}
-
-.header ul,
-.features ul,
-.popular-goods ul,
-.popular-productions ul,
-.footer ul {
-  list-style: none;
 }
 
 h1 {
@@ -283,6 +279,7 @@ h1 {
 
 .container-popular-goods,
 .container-popular-productions {
+  font-family: 'Cuprum', Arial, sans-serif;
   background-color: #f9f5f0;
 }
 
@@ -315,6 +312,9 @@ h1 {
   background-color: #ba2732;
 }
 
+.popular-goods {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
 .goods-list li {
   border: 1px solid #e4e4e4;
 }
@@ -345,6 +345,7 @@ h1 {
 }
 
 .good-buy {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -361,6 +362,7 @@ h1 {
 }
 
 .good-bookmark {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
@@ -422,11 +424,15 @@ h1 {
   color: #000000;
 }
 
+.info-company ul {
+  list-style-type: disc
+}
+
 .delivery-company-list p {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
+  color: #000000
 }
 
 /* Здесь будет стилизация слайдера */
@@ -460,12 +466,129 @@ h1 {
   background-color: #ba2732;
 }
 
+.catalog {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.catalog-navigation a,
+.catalog-navigation li {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.catalog-title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.filter-and-sort fieldset {
+  border: none;
+}
+
+.filter-and-sort legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000
+}
+
+.filter-and-sort label {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000
+}
+
+.catalog-filter h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.catalog-filter button {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.catalog-sort h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #f7f3ec
+}
+
+.catalog-sort a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #c7c7c7;
+  text-decoration: underline dotted #ee3643
+}
+
+.catalog-sort a:hover {
+  color: #000000;
+  text-decoration: underline solid #ee3643
+}
+
+.catalog-sort a:focus {
+  color: #ee3643;
+  text-decoration: none
+}
+
+.catalog-pagination a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px
+}
+
+.catalog-pagination a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.catalog-pagination a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-current {
+  color: #fef5f6;
+  background-color: #ee3643
+}
+
+.perforator-info {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #f2f6f8
+}
+
+.perforator-info h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
 .footer {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  color: #ffffff;
-
+  color: #f1f5f7;
   background-color: #32425c;
 }
 
@@ -543,7 +666,3 @@ h1 {
   height: 1px;
   margin: -1px;
 }
-
-
-
-

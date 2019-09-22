@@ -2,28 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт.Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <a href="index.html">
-        <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
-      </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <label class="visually-hidden" for="form-search">Поле поиска</label>
-          <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
-        </p>
-      </form>
-      <a href="#">Закладки:0</a>
-      <a href="#">Корзина:10</a>
-      <a href="#">Оформить заказ</a>
-      <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
-      <a href="#">Равшан Джамшутович</a>
-      <a href="#">Выйти</a>
-      <ul>
+      <div class="container-header-upper">
+        <div class="container-header-logo">
+          <a class="header-logo" href="index.html">
+            <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
+          </a>
+        </div>
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label class="visually-hidden" for="form-search">Поле поиска</label>
+            <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
+          </p>
+        </form>
+          <a class="header-bookmarks" href="#">Закладки:0</a>
+          <a class="header-cart" href="#">Корзина:0</a>
+          <a class="header-buy" href="#">Оформить заказ</a>
+      </div>
+      <p class="header-phone">
+        <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+      </p>
+      <p class="header-address">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+      </p>
+      <a class="header-user-login" href="#">Равшан Джамшутович</a>
+      <button class="header-user-out" type="button">Выйти</button>
+      <ul class="header-user-sales">
         <li>
           <a href="#">Мои заказы</a>
         </li>
@@ -31,16 +41,16 @@
           <a href="#">Личный кабинет</a>
         </li>
       </ul>
-      <nav>
+      <nav class="header-site-navigation">
         <ul>
           <li>
-            <a href="index.html">Главная</a>
+            <a href="#">Главная</a>
           </li>
           <li>
             <a href="#">Компания</a>
           </li>
           <li>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
           </li>
           <li>
             <a href="#">Новости</a>

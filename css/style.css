@@ -192,22 +192,33 @@ h1 {
   color: #32425c;
 }
 
-.header-login-link,
-.header-registration-link {
+.header-user-enter,
+.header-user-registration,
+.header-user-login {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.header-login-link:hover,
-.header-registration-link:hover {
-  color: #ee3643;
+.header-user-sales a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline
 }
 
-.header-login-link:active,
-.header-registration-link:active {
-  color: #cacaca;
+.header-user-enter:hover,
+.header-user-registration:hover,
+.header-user-sales a:hover {
+  color: #ee3643
+}
+
+.header-user-enter:active,
+.header-user-registration:active,
+.header-user-login:active,
+.header-user-sales a:active {
+  color: #cacaca
 }
 
 .header-site-navigation {

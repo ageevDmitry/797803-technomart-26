@@ -283,7 +283,8 @@ h1 {
 }
 
 .container-popular-goods a,
-.container-popular-productions a {
+.container-popular-productions a,
+.info-company a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -291,12 +292,14 @@ h1 {
 }
 
 .container-popular-goods a:hover,
-.container-popular-productions a:hover {
+.container-popular-productions a:hover,
+.info-company a:hover {
   background-color: #ca2c37;
 }
 
 .container-popular-goods a:active,
-.container-popular-productions a:active {
+.container-popular-productions a:active,
+.info-company a:active {
   background-color: #ba2732;
 }
 
@@ -350,7 +353,7 @@ h1 {
   line-height: 18px;
   color: #32425c;
   border: 3px solid #63a63e;
-  border-radius: 2px
+  border-radius: 2px;
 }
 
 .good-bookmark:hover {
@@ -369,6 +372,78 @@ h1 {
 .productions-list li:hover {
   box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);
   border: 1px solid #ffffff;
+}
+
+.serviсes {
+  background-color: #f4f7f9;
+}
+
+.serviсes h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.serviсes h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.serviсes p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.info-company h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.info-company p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.delivery-company-list p {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.contacts button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+}
+
+.contacts button:hover {
+  background-color: #ca2c37;
+}
+
+.contacts button:active {
+  background-color: #ba2732;
 }
 
 .visually-hidden {

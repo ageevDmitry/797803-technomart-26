@@ -87,30 +87,16 @@ body ul {
   background-color: #f4f7f9;
 }
 
-h1 {
-  margin: 0;
-  margin-left: 53px;
-  padding: 0;
-  width: 195px;
-  min-height: 60px;
-
-  font-style: italic;
-  font-size: 16px;
-  line-height: 23px;
-  font-weight: 400;
-  color: #ee3643;
-}
-
 .header-upper-container {
+  display: flex;
   width: 100%;
   min-height: 42px;
-
-  display: flex;
 
   background-color: #293449;
 }
 
-.header-upper-center-container {
+.header-upper-container
+.center-container {
   display: flex;
   width: 940px;
   margin: 0 auto;
@@ -119,20 +105,16 @@ h1 {
 
 .header-logo-container {
   width: 220px;
-  height: 47px;
+  height: 42px;
   margin: 0;
-  margin-right: 49px;
 
   background-color: #ee3643;
   box-shadow: 0px 5px 0px 0px #b52933;
 }
 
-.header-search-container {
-  width: 270px;
-  height: 43px;
-}
-
 .header-search input {
+  width: 270px;
+  height: 42px;
   margin: 0;
   padding: 0;
 
@@ -187,16 +169,13 @@ h1 {
   color: #ffffff;
 }
 
-.header-bookmarks {
-  margin-left: 44px;
+.header-bookmarks,
+.header-cart,
+.header-buy {
+  width: 150px;
+  height: 42px;
 
-  color: #ffffff;
-}
-
-.header-cart {
-  margin-left: 78px;
-
-  color: #ffffff;
+  color: #ffffff
 }
 
 .header-bookmarks:hover,
@@ -204,34 +183,44 @@ h1 {
   background-color: #212a3a;
 }
 
-.header-bookmarks:active,
-.header-cart:active {
-  color: #73777f;
-  background-color: #161d29;
-}
-
-.header-buy {
-  margin-left: auto;
-
-  color: #ffffff;
+.header-buy:hover {
   background-color: #63a63e;
 }
 
-.header-buy:hover {
-  background-color: #5fbb2d;
+.header-bookmarks:active,
+.header-cart:active {
+  color: #909399;
+  background-color: #161d29;
 }
 
 .header-buy:active {
-  color: #a8c29a;
   background-color: #518534;
 }
 
-.header-middle-center-container {
+.header-buy a:active {
+  color: #a8c29a;
+}
+
+.header-middle-container {
   display: flex;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 49px;
+  padding-top: 46px;
+}
+
+h1 {
+  margin: 0;
+  margin-left: 53px;
+  padding: 0;
+  width: 196px;
+  min-height: 60px;
+
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ee3643;
 }
 
 .phone-address-container {
@@ -268,18 +257,36 @@ h1 {
 }
 
 .header-user-navigation {
+  display: flex;
+
   margin: 0;
   margin-left: auto;
   padding: 0;
 }
 
-.header-user-enter,
-.header-user-registration,
-.header-user-login {
+.header-user-enter {
+  width: 121px;
+  height: 45px;
+  margin-right: 10px;
+
+  background-color: #ffffff;
+}
+
+.header-user-registration {
+  width: 140px;
+  height: 45px;
+
+
+  background-color: #ffffff;
+}
+
+.header-user-enter a,
+.header-user-registration a,
+.header-user-login a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+
 }
 
 .header-user-sales a {
@@ -289,20 +296,20 @@ h1 {
   text-decoration: underline
 }
 
-.header-user-enter:hover,
-.header-user-registration:hover,
+.header-user-enter a:hover,
+.header-user-registration a:hover,
 .header-user-sales a:hover {
   color: #ee3643
 }
 
-.header-user-enter:active,
-.header-user-registration:active,
-.header-user-login:active,
+.header-user-enter a:active,
+.header-user-registration a:active,
+.header-user-login a:active,
 .header-user-sales a:active {
   color: #cacaca
 }
 
-.header-down-center-container {
+.header-down-container {
   display: flex;
   width: 940px;
   margin: 0 auto;
@@ -318,7 +325,9 @@ h1 {
   box-shadow: 0px 5px 0px 0px #293449;
 }
 
-.header-site-navigation  ul {
+.site-navigation-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -334,6 +343,14 @@ h1 {
 .header-site-navigation a:active {
   color: #a8abaf;
   background-color: #1d2739
+}
+
+.features-upper-container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 60px;
 }
 
 .features {

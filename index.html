@@ -9,123 +9,126 @@
   <body>
     <header class="header">
       <div class="header-upper-container">
-        <div class="header-upper-center-container">
+        <div class="center-container">
           <div class="header-logo-container">
             <a class="header-logo">
               <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
             </a>
           </div>
-          <div class="header-search-container">
-            <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-              <p>
-                <label class="visually-hidden" for="form-search">Поле поиска</label>
-                <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
-              </p>
-            </form>
-          </div>
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="form-search">Поле поиска</label>
+            <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
+          </form>
           <a class="header-bookmarks" href="#">Закладки:0</a>
           <a class="header-cart" href="#">Корзина:0</a>
           <a class="header-buy" href="#">Оформить заказ</a>
         </div>
       </div>
-      <div class="header-middle-center-container">
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <div class="phone-address-container">
-          <p class="header-phone">
-            <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-          </p>
-          <p class="header-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
-          </p>
-        </div>
-        <ul class="header-user-navigation">
-          <li>
-            <a class="header-user-enter" href="#">Войти</a>
-          </li>
-          <li>
-            <a class="header-user-registration" href="#">Регистрация</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-down-center-container">
-        <nav class="header-site-navigation">
-          <ul>
-            <li>
-              <a href="#">Главная</a>
+        <div class="header-middle-container">
+          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <div class="phone-address-container">
+            <p class="header-phone">
+              <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+            </p>
+            <p class="header-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+            </p>
+          </div>
+          <ul class="header-user-navigation">
+            <li class="header-user-enter">
+              <a  href="#">Войти</a>
             </li>
-            <li>
-              <a href="#">Компания</a>
-            </li>
-            <li>
-              <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Спецпредлоржения</a>
-            </li>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
+            <li class="header-user-registration">
+              <a href="#">Регистрация</a>
             </li>
           </ul>
-      </nav>
-      </div>
-
+        </div>
+        <div class="header-down-container">
+          <nav class="header-site-navigation">
+            <ul class="site-navigation-list">
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Спецпредлоржения</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
     </header>
     <main>
-      <section class="features">
-        <h2 class="visually-hidden">Товары и услуги компании «Техномарт»</h2>
-        <ul class="features-list">
-          <li class="feature-materials new">
-            <p>Материалы</p>
-            <a href="#">На любой вкус</a>
-            <img src="img/icon-cart.svg"  width="43" height="65" alt="Банка с краской">
-          </li>
-          <li class="feature-tools">
-            <p>Инструмент</p>
-            <a href="#">На все случаи</a>
-            <img src="img/icon-drill.svg"  width="75" height="61" alt="Дрель">
-          </li>
-          <li class="feature-technique">
-            <p>Техника</p>
-            <a href="#">Для стройки</a>
-            <img src="img/icon-tractor.svg"  width="78" height="62" alt="Трактор">
-          </li>
-          <li class="feature-sales">
-            <p>Скидки 50%</p>
-            <a href="#">На 350 товаров</a>
-            <img src="img/icon-cart.svg"  width="59" height="72" alt="Корзина">
-          </li>
-          <li class="feature-delivery">
-            <p>Доставка</p>
-            <a href="#">Бесплатно</a>
-            <img src="img/icon-van.svg"  width="78" height="63" alt="Фургон">
-          </li>
-        </ul>
+      <section class="features-slider">
+        <div class="features-upper-container">
+          <h2 class="visually-hidden">Товары и услуги компании «Техномарт»</h2>
+          <ul class="features-list-upper">
+            <li class="feature-materials new">
+              <p>Материалы</p>
+              <a href="#">На любой вкус</a>
+              <img src="img/icon-cart.svg"  width="43" height="65" alt="Банка с краской">
+            </li>
+            <li class="feature-tools">
+              <p>Инструмент</p>
+              <a href="#">На все случаи</a>
+              <img src="img/icon-drill.svg"  width="75" height="61" alt="Дрель">
+            </li>
+            <li class="feature-technique">
+              <p>Техника</p>
+              <a href="#">Для стройки</a>
+              <img src="img/icon-tractor.svg"  width="78" height="62" alt="Трактор">
+            </li>
+          </ul>
+        </div>
+        <div class="features-slider-container">
+          <div class="slider">
+            <h2 class="visually-hidden">Слайдер с товарами</h2>
+            <ul class="slider-content">
+              <li class="drill">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+              </li>
+              <li class="perforator visually-hidden">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <img src="img/slider-perforator.jpg" width="620" height="266" alt="Дрели">
+              </li>
+            </ul>
+            <a class="button slider-catalog" href="catalog.html">Открыть каталог</a>
+            <button class="button slider-back" type="button">Назад</button>
+            <button class="button slider-next" type="button">Вперед</button>
+          </div>
+          <div class="features-down-container">
+            <ul class="feature-list-down">
+              <li class="feature-sales">
+                <p>Скидки 50%</p>
+                <a href="#">На 350 товаров</a>
+                <img src="img/icon-cart.svg"  width="59" height="72" alt="Корзина">
+              </li>
+              <li class="feature-delivery">
+                <p>Доставка</p>
+                <a href="#">Бесплатно</a>
+                <img src="img/icon-van.svg"  width="78" height="63" alt="Фургон">
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section class="slider">
-        <h2 class="visually-hidden">Слайдер с товарами</h2>
-        <ul class="slider-content">
-          <li class="drill">
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-            <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
-          </li>
-          <li class="perforator">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <img src="img/slider-perforator.jpg" width="620" height="266" alt="Дрели">
-          </li>
-        </ul>
-        <a class="button slider-catalog" href="catalog.html">Открыть каталог</a>
-        <button class="button slider-back" type="button">Назад</button>
-        <button class="button slider-next" type="button">Вперед</button>
-      </section>
 
       <section class="popular-goods">
         <div class="container-popular-goods">

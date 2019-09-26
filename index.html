@@ -8,62 +8,73 @@
   </head>
   <body>
     <header class="header">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="container-header-upper">
-        <div class="container-header-logo">
-          <a class="header-logo">
-            <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
-          </a>
-        </div>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <label class="visually-hidden" for="form-search">Поле поиска</label>
-            <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
-          </p>
-        </form>
+      <div class="header-upper-container">
+        <div class="header-upper-center-container">
+          <div class="header-logo-container">
+            <a class="header-logo">
+              <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарта">
+            </a>
+          </div>
+          <div class="header-search-container">
+            <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+              <p>
+                <label class="visually-hidden" for="form-search">Поле поиска</label>
+                <input id="form-search" type="search" name="search" value="" placeholder="Поиск:">
+              </p>
+            </form>
+          </div>
           <a class="header-bookmarks" href="#">Закладки:0</a>
           <a class="header-cart" href="#">Корзина:0</a>
           <a class="header-buy" href="#">Оформить заказ</a>
+        </div>
       </div>
-      <p class="header-phone">
-        <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-      </p>
-      <p class="header-address">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
-      </p>
-      <ul class="header-user-navigation">
-        <li>
-          <a class="header-user-enter" href="#">Войти</a>
-        </li>
-        <li>
-          <a class="header-user-registration" href="#">Регистрация</a>
-        </li>
-      </ul>
-      <nav class="header-site-navigation">
-        <ul>
+      <div class="header-middle-center-container">
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="phone-address-container">
+          <p class="header-phone">
+            <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+          </p>
+          <p class="header-address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+          </p>
+        </div>
+        <ul class="header-user-navigation">
           <li>
-            <a href="#">Главная</a>
+            <a class="header-user-enter" href="#">Войти</a>
           </li>
           <li>
-            <a href="#">Компания</a>
-          </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="#">Спецпредлоржения</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
+            <a class="header-user-registration" href="#">Регистрация</a>
           </li>
         </ul>
+      </div>
+      <div class="header-down-center-container">
+        <nav class="header-site-navigation">
+          <ul>
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Компания</a>
+            </li>
+            <li>
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Спецпредлоржения</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
       </nav>
+      </div>
+
     </header>
     <main>
       <section class="features">

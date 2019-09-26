@@ -98,7 +98,7 @@ body ul {
 .header-upper-container
 .center-container {
   display: flex;
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -203,7 +203,7 @@ body ul {
 
 .header-middle-container {
   display: flex;
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 46px;
@@ -310,14 +310,14 @@ h1 {
 }
 
 .header-down-container {
-  display: flex;
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 44px;
 }
 
 .header-site-navigation {
+  min-height: 55px;
   margin: 0;
   padding: 0;
 
@@ -327,7 +327,7 @@ h1 {
 
 .site-navigation-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -346,30 +346,44 @@ h1 {
 }
 
 .features-upper-container {
-  display: flex;
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 60px;
 }
 
-.features {
+.features-list-upper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.features a {
+.features-list-upper li {
+  width: 300px;
+  height: 123px;
+}
+
+.features-list-upper p {
+  margin: 0;
+  padding: 0;
+}
+
+.features-list-upper a {
   color: #ffffff;
   background-color: #e5e5e5
 }
 
-.features a:hover {
+.features-list-upper a:hover {
   background-color: #cccccc
 }
 
-.features a:active {
+.features-list-upper a:active {
   background-color: #b2b2b2
 }
 
@@ -385,7 +399,53 @@ h1 {
   background-color: #dc91d8;
 }
 
+.features-slider-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 960px;
+  min-height: 266px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.features-list-down {
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.features-list-down li {
+  width: 300px;
+  height: 123px;
+}
+
+.features-list-down p {
+  margin: 0;
+  padding: 0;
+}
+
+.features-list-down a {
+  color: #ffffff;
+  background-color: #e5e5e5
+}
+
+.features-list-down a:hover {
+  background-color: #cccccc
+}
+
+.features-list-down a:active {
+  background-color: #b2b2b2
+}
+
 .feature-sales {
+  margin-bottom: 20px;
+
   background-color: #8ed78f;
 }
 
@@ -403,6 +463,9 @@ h1 {
 
 .container-popular-goods h2,
 .container-popular-productions h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;

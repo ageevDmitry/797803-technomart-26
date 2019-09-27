@@ -276,7 +276,6 @@ h1 {
   width: 140px;
   height: 45px;
 
-
   background-color: #ffffff;
 }
 
@@ -286,7 +285,6 @@ h1 {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-
 }
 
 .header-user-sales a {
@@ -410,6 +408,8 @@ h1 {
   padding-top: 20px;
 }
 
+/* Здесь будет стилизация слайдера */
+
 .features-list-down {
   margin: 0;
   padding: 0;
@@ -453,17 +453,27 @@ h1 {
   background-color: #ffc047;
 }
 
-/* Здесь будет стилизация слайдера */
+.popular-goods {
+  width: 960px;
+  min-height: 425px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 53px;
 
-.container-popular-goods,
-.container-popular-productions {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.popular-goods-container {
+  display: flex;
+  min-height: 89px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   background-color: #f9f5f0;
 }
 
-.container-popular-goods h2,
-.container-popular-productions h2 {
+.popular-goods-container h2 {
   margin: 0;
+  margin-left: 30px;
   padding: 0;
 
   font-size: 30px;
@@ -472,31 +482,49 @@ h1 {
   color: #32425c;
 }
 
-.container-popular-goods a,
-.container-popular-productions a,
-.info-company a {
+.popular-goods-container a {
+  margin-left: auto;
+  margin-right: 36px;
+
+  width: 253px;
+  height: 38px;
+
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
+  border-radius: 3px;
 }
 
-.container-popular-goods a:hover,
-.container-popular-productions a:hover,
-.info-company a:hover {
+.popular-goods-container a:hover {
   background-color: #ca2c37;
 }
 
-.container-popular-goods a:active,
-.container-popular-productions a:active,
-.info-company a:active {
+.popular-goods-container a:active {
   background-color: #ba2732;
 }
 
-.popular-goods {
-  font-family: 'PT Sans', Arial, sans-serif;
+.container-popular-productions {
+  font-family: 'Cuprum', Arial, sans-serif;
+  background-color: #f9f5f0;
 }
+
+.goods-list {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+
 .goods-list li {
+  margin: 0;
+  padding: 0;
+
+  width: 220px;
+  height: 318px;
+
   border: 1px solid #e4e4e4;
 }
 
@@ -506,12 +534,18 @@ h1 {
 }
 
 .goods-list h3 {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   line-height: 20px;
   color: #000000
 }
 
 .good-legacy-price {
+  margin: 0;
+  padding: 0;
+
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
@@ -519,6 +553,9 @@ h1 {
 }
 
 .good-price {
+  margin: 0;
+  padding: 0;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -563,6 +600,39 @@ h1 {
 .bosch {
   border: 1px solid #e4e4e4;
 }
+
+.container-popular-goods h2,
+.container-popular-productions h2 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.container-popular-goods a,
+.container-popular-productions a,
+.info-company a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.container-popular-goods a:hover,
+.container-popular-productions a:hover,
+.info-company a:hover {
+  background-color: #ca2c37;
+}
+
+.container-popular-goods a:active,
+.container-popular-productions a:active,
+.info-company a:active {
+  background-color: #ba2732;
+}
+
 
 .productions-list li:hover {
   box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);

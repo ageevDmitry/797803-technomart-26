@@ -88,7 +88,6 @@ body ul {
 }
 
 .header-upper-container {
-  display: flex;
   width: 100%;
   min-height: 42px;
 
@@ -103,11 +102,16 @@ body ul {
   padding: 0 10px;
 }
 
-.header-logo-container {
+.header-logo {
+  display: block;
   width: 220px;
   height: 42px;
   margin: 0;
-
+  padding-top: 13px;
+  padding-right: 55px;
+  padding-bottom: 11px;
+  padding-left: 56px;
+  text-align: center;
   background-color: #ee3643;
   box-shadow: 0px 5px 0px 0px #b52933;
 }
@@ -116,22 +120,19 @@ body ul {
   width: 270px;
   height: 42px;
   margin: 0;
-  padding: 0;
-
+  padding-left: 47px;
   font-family: inherit;
-
   background-color: transparent;
   border-color: transparent;
+}
+
+.header-search input:hover {
+  background-color:#212a3a;
 }
 
 .header-search input:focus {
   background-color: #ffffff;
   border-color: transparent;
-  outline: 0;
-}
-
-.header-search input:hover {
-  background-color:#212a3a;
 }
 
 .header-search input::-ms-clear {
@@ -169,13 +170,40 @@ body ul {
   color: #ffffff;
 }
 
-.header-bookmarks,
-.header-cart,
-.header-buy {
+.header-bookmarks {
+  display: block;
   width: 150px;
   height: 42px;
+  padding-top: 12px;
+  padding-right: 27px;
+  padding-bottom: 14px;
+  padding-left: 44px;
+  text-align: center;
+  color: #ffffff;
+}
 
-  color: #ffffff
+.header-cart {
+  display: block;
+  width: 150px;
+  height: 42px;
+  padding-top: 12px;
+  padding-right: 30px;
+  padding-left: 49px;
+  padding-bottom: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-buy {
+  display: block;
+  width: 150px;
+  height: 42px;
+  padding-top: 12px;
+  padding-right: 22px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .header-bookmarks:hover,
@@ -201,15 +229,22 @@ body ul {
   color: #a8c29a;
 }
 
-.header-middle-container {
+.header-down-container {
+  width: 100%;
+  min-height: 278px;
+
+  background-color: #f4f7f9;
+}
+
+.header-down-container
+.center-container {
   display: flex;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 46px;
 }
 
-h1 {
+.technomart-description {
   margin: 0;
   margin-left: 53px;
   padding: 0;
@@ -1159,23 +1194,31 @@ h1 {
 }
 
 .footer {
-  width: auto;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: #f1f5f7;
-  background-color: #32425c;
+
 }
 
 .footer-upper-container {
+  width: auto;
+  min-height: 193px;
+
+  background-color: #32425c;
+}
+
+.footer-upper-container
+.center-container {
   display: flex;
+  flex-wrap: wrap;
   width: 960px;
-  min-height: 63px;
+  min-height: 193px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.footer-logo-container {
+.footer-logo {
   width: 220px;
   height: 63px;
 
@@ -1183,46 +1226,34 @@ h1 {
   box-shadow: 0px 5px 0px 0px #b52933;
 }
 
-.footer-upper-navigation {
-  margin: 0;
-  margin-left: auto;
-  padding: 0;
-}
-
-.navigation-upper-list {
+.footer-navigation-upper {
   display: flex;
+  width: 620px;
+  height: 50px;
   margin: 0;
   padding: 0;
 }
 
-.navigation-upper-list li {
+.footer-navigation-upper li {
   margin-top: 42px;
   margin-left: 60px;
 }
 
-.navigation-upper-list a {
+.footer-navigation-upper a {
   color: #f1f5f7;
 }
 
-.navigation-upper-list a:hover {
+.footer-navigation-upper a:hover {
   text-decoration: underline
 }
 
-.navigation-upper-list a:active {
+.footer-navigation-upper a:active {
   text-decoration: none;
   color: #929caa
 }
 
-.footer-middle-container {
-  display: flex;
-  width: 960px;
-  min-height: 123px;
-  margin: 0 auto;
-  padding: 0 10px;
-  padding-top: 32px;
-}
-
 .address-phone-container {
+  width: 330px;
   margin-left: 3px;
 }
 
@@ -1239,31 +1270,27 @@ h1 {
   color: #ffffff
 }
 
-.footer-middle-navigation {
-  margin: 0;
-  margin-left: auto;
-  padding: 0;
-}
-
-.navigation-middle-list {
+.footer-navigation-down {
   display: flex;
+  width: 620px;
+  height: 50px;
   margin: 0;
   padding: 0;
 }
 
-.navigation-middle-list li {
+.footer-navigation-down li {
   margin-left: 60px;
 }
 
-.navigation-middle-list a {
+.footer-navigation-down a {
   color: #e0b976;
 }
 
-.navigation-middle-list a:hover {
+.footer-navigation-down a:hover {
   text-decoration: underline;
 }
 
-.navigation-middle-list a:active {
+.footer-navigation-down a:active {
   text-decoration: none;
   color: #ee3643;
 }
@@ -1271,20 +1298,17 @@ h1 {
 .footer-down-container {
   width: auto;
   min-height: 107px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
+
   background-color: #293449;
 }
 
 .footer-down-container
 .center-container {
   display: flex;
+  flex-wrap: wrap;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 40px;
 }
 
 .footer-copyright {

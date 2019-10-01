@@ -243,6 +243,8 @@ body ul {
   padding-left: 20px;
   text-align: center;
   color: #ffffff;
+
+  background-color: #63a63e;
 }
 
 .header-bookmarks:hover,
@@ -251,7 +253,7 @@ body ul {
 }
 
 .header-buy:hover {
-  background-color: #63a63e;
+  background-color: #5fbb2d;
 }
 
 .header-bookmarks:active,
@@ -262,14 +264,7 @@ body ul {
 
 .header-buy:active {
   color: #a8c29a;
-  background-color: #518534;
-}
-
-.header-down-container {
-  width: 100%;
-  min-height: 278px;
-
-  background-color: #f4f7f9;
+  background-color: #5fbb2d;
 }
 
 .header-bookmarks:hover:before,
@@ -282,21 +277,30 @@ body ul {
   opacity: 0.5;
 }
 
+.header-down-container {
+  width: 100%;
+  min-height: 278px;
+
+  background-color: #f4f7f9;
+}
+
 .header-down-container
 .center-container {
   display: flex;
+  flex-wrap: wrap;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+  padding-top: 46px;
 }
 
 .technomart-description {
-  margin: 0;
-  margin-left: 53px;
-  padding: 0;
+  max-width: 203px;
   width: 196px;
+  margin: 0;
+  margin-left: 52px;
+  padding: 0;
   min-height: 60px;
-
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -307,33 +311,45 @@ body ul {
 .phone-address-container {
   display: flex;
   flex-direction: column;
-
-  margin-left: 70px;
+  width: 270px;
+  margin-left: 72px;
 }
 
 .header-phone {
-  margin: 0;
-  padding: 0;
-  width: 270px;
-  min-height: 45px;
-
-  border: 3px solid #ffffff;
-}
-
-.header-phone a {
+  display: block;
+  position: relative;
+  padding-top: 9px;
+  padding-right: 48px;
+  padding-bottom: 9px;
+  padding-left: 71px;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
+  border: 3px solid #ffffff;
+}
+
+.header-phone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-address {
   margin: 0;
   padding: 0;
+  padding-top: 4px;
   width: 270px;
   min-height: 23px;
-
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #32425c;
 }
 
@@ -345,34 +361,63 @@ body ul {
   padding: 0;
 }
 
-.header-user-enter a,
-.header-user-registration a {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-}
-
-.header-user-enter a:hover,
-.header-user-registration a:hover {
-  color: #ee3643
-}
-
-.header-user-enter a:active,
-.header-user-registration a:active {
-  color: #cacaca
-}
-
 .header-user-enter {
+  display: block;
+  position: relative;
   width: 121px;
   height: 45px;
   margin-right: 10px;
+  padding-top: 12px;
+  padding-right: 26px;
+  padding-bottom: 15px;
+  padding-left: 47px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-user-enter svg {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.header-user-registration {
+  display: block;
+  width: 150px;
+  height: 45px;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
 
   background-color: #ffffff;
 }
 
+.header-user-enter:hover,
+.header-user-registration:hover {
+  color: #ee3643;
+}
+
+.header-user-enter:active,
+.header-user-registration:active {
+  color: #cacaca
+}
+
+.header-user-enter:hover path {
+  fill: #32425c;
+}
+
+.header-user-enter:active path {
+  fill: #bcbcbc;
+}
+
 .header-user-registration {
-  width: 140px;
+  width: 150px;
   height: 45px;
+  padding: 12px;
+  text-align: center;
 }
 
 .header-user-container {
@@ -423,38 +468,33 @@ body ul {
   color: #cacaca
 }
 
-.header-down-container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
-  padding-top: 44px;
-}
-
-.header-site-navigation {
-  min-height: 55px;
-  margin: 0;
-  padding: 0;
-
-  background-color: #32425c;
-  box-shadow: 0px 5px 0px 0px #293449;
-}
-
 .site-navigation-list {
   display: flex;
   justify-content: space-around;
+  width: 940px;
+  min-height: 60px;
   margin: 0;
+  margin-top: 39px;
   padding: 0;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
 }
 
-.header-site-navigation a {
-  color: #ffffff
+.site-navigation-list a {
+  display: block;
+  padding-top: 20px;
+  padding-right: 34px;
+  padding-bottom: 17px;
+  padding-left: 33px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.header-site-navigation a:hover {
+.site-navigation-list a:hover {
   background-color: #293449
 }
 
-.header-site-navigation a:active {
+.site-navigation-list a:active {
   color: #a8abaf;
   background-color: #1d2739
 }

@@ -116,12 +116,23 @@ body ul {
   box-shadow: 0px 5px 0px 0px #b52933;
 }
 
+.header-search {
+  position: relative;
+  width: 270px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+}
+
 .header-search input {
   width: 270px;
   height: 42px;
   margin: 0;
   padding-left: 47px;
   font-family: inherit;
+  background-image: url("../img/icon-search.svg");
+  background-position: 15px 10px;
+  background-repeat: no-repeat;
   background-color: transparent;
   border-color: transparent;
 }
@@ -172,6 +183,7 @@ body ul {
 
 .header-bookmarks {
   display: block;
+  position: relative;
   width: 150px;
   height: 42px;
   padding-top: 12px;
@@ -182,8 +194,22 @@ body ul {
   color: #ffffff;
 }
 
+.header-bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
 .header-cart {
   display: block;
+  position: relative;
   width: 150px;
   height: 42px;
   padding-top: 12px;
@@ -192,6 +218,19 @@ body ul {
   padding-bottom: 13px;
   text-align: center;
   color: #ffffff;
+}
+
+.header-cart::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 15px;
+  height: 16px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .header-buy {
@@ -222,11 +261,8 @@ body ul {
 }
 
 .header-buy:active {
-  background-color: #518534;
-}
-
-.header-buy a:active {
   color: #a8c29a;
+  background-color: #518534;
 }
 
 .header-down-container {
@@ -234,6 +270,16 @@ body ul {
   min-height: 278px;
 
   background-color: #f4f7f9;
+}
+
+.header-bookmarks:hover:before,
+.header-cart:hover:before {
+  opacity: 1;
+}
+
+.header-bookmarks:hover:active,
+.header-cart:hover:active {
+  opacity: 0.5;
 }
 
 .header-down-container

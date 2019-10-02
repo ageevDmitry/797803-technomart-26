@@ -97,6 +97,7 @@ body ul {
 .header-upper-container
 .center-container {
   display: flex;
+  flex-wrap: wrap;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
@@ -104,14 +105,12 @@ body ul {
 
 .header-logo {
   display: block;
-  width: 220px;
-  height: 42px;
-  margin: 0;
+  min-width: 220px;
+  min-height: 42px;
   padding-top: 13px;
   padding-right: 55px;
-  padding-bottom: 11px;
+  padding-bottom: 7px;
   padding-left: 56px;
-  text-align: center;
   background-color: #ee3643;
   box-shadow: 0px 5px 0px 0px #b52933;
 }
@@ -124,13 +123,23 @@ body ul {
   padding: 0;
 }
 
+.header-search label {
+  position: relative;
+}
+
+.header-search svg {
+  position: absolute;
+  top: 1px;
+  left: 18px;
+}
+
 .header-search input {
-  width: 270px;
-  height: 42px;
+  min-width: 270px;
+  min-height: 42px;
   margin: 0;
   padding-left: 47px;
   font-family: inherit;
-  background-image: url("../img/icon-search.svg");
+  /* background-image: url("../img/icon-search.svg"); */
   background-position: 15px 10px;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -144,6 +153,14 @@ body ul {
 .header-search input:focus {
   background-color: #ffffff;
   border-color: transparent;
+}
+
+.header-search input:hover + svg path {
+  fill: #ffffff;
+}
+
+.header-search input:focus + svg path {
+  fill: #ee3643;
 }
 
 .header-search input::-ms-clear {
@@ -184,13 +201,12 @@ body ul {
 .header-bookmarks {
   display: block;
   position: relative;
-  width: 150px;
-  height: 42px;
+  min-width: 150px;
+  min-height: 42px;
   padding-top: 12px;
   padding-right: 27px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   padding-left: 44px;
-  text-align: center;
   color: #ffffff;
 }
 
@@ -210,12 +226,12 @@ body ul {
 .header-cart {
   display: block;
   position: relative;
-  width: 150px;
-  height: 42px;
+  min-width: 150px;
+  min-height: 42px;
   padding-top: 12px;
   padding-right: 30px;
-  padding-left: 49px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
+  padding-left: 48px;
   text-align: center;
   color: #ffffff;
 }
@@ -235,15 +251,13 @@ body ul {
 
 .header-buy {
   display: block;
-  width: 150px;
-  height: 42px;
+  min-width: 150px;
+  min-height: 42px;
   padding-top: 12px;
-  padding-right: 22px;
+  padding-right: 20px;
   padding-bottom: 12px;
-  padding-left: 20px;
-  text-align: center;
+  padding-left: 22px;
   color: #ffffff;
-
   background-color: #63a63e;
 }
 
@@ -295,10 +309,10 @@ body ul {
 }
 
 .technomart-description {
-  max-width: 203px;
-  width: 196px;
+  max-width: 202px;
   margin: 0;
-  margin-left: 52px;
+  margin-top: 3px;
+  margin-left: 53px;
   padding: 0;
   min-height: 60px;
   font-style: italic;
@@ -311,8 +325,8 @@ body ul {
 .phone-address-container {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  margin-left: 72px;
+  min-width: 270px;
+  margin-left: 65px;
 }
 
 .header-phone {
@@ -344,8 +358,6 @@ body ul {
   margin: 0;
   padding: 0;
   padding-top: 4px;
-  width: 270px;
-  min-height: 23px;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -361,15 +373,22 @@ body ul {
   padding: 0;
 }
 
+.header-user-navigation li {
+  margin-right: 10px;
+}
+
+.header-user-navigation li:last-child {
+  margin-right: 0;
+}
+
 .header-user-enter {
   display: block;
   position: relative;
-  width: 121px;
-  height: 45px;
-  margin-right: 10px;
+  min-width: 121px;
+  min-height: 45px;
   padding-top: 12px;
   padding-right: 26px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   padding-left: 47px;
   font-size: 21px;
   line-height: 21px;
@@ -414,10 +433,12 @@ body ul {
 }
 
 .header-user-registration {
-  width: 150px;
-  height: 45px;
-  padding: 12px;
-  text-align: center;
+  min-width: 150px;
+  min-height: 45px;
+  padding-top: 12px;
+  padding-right: 23px;
+  padding-bottom: 11px;
+  padding-left: 24px;
 }
 
 .header-user-container {
@@ -470,6 +491,7 @@ body ul {
 
 .site-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 940px;
   min-height: 60px;
@@ -483,10 +505,7 @@ body ul {
 .site-navigation-list a {
   display: block;
   padding-top: 20px;
-  padding-right: 34px;
   padding-bottom: 17px;
-  padding-left: 33px;
-  text-align: center;
   color: #ffffff;
 }
 
@@ -497,6 +516,41 @@ body ul {
 .site-navigation-list a:active {
   color: #a8abaf;
   background-color: #1d2739
+}
+
+.navigation-main {
+  padding-right: 33px;
+  padding-left: 51px;
+}
+
+.navigation-company {
+  padding-right: 30px;
+  padding-left: 32px;
+}
+
+.navigation-catalog {
+  padding-right: 29px;
+  padding-left: 28px;
+}
+
+.navigation-news {
+  padding-right: 30px;
+  padding-left: 31px;
+}
+
+.navigation-offers {
+  padding-right: 33px;
+  padding-left: 29px;
+}
+
+.navigation-delivery {
+  padding-right: 33px;
+  padding-left: 29px;
+}
+
+.navigation-contacts {
+  padding-right: 54px;
+  padding-left: 29px;
 }
 
 .features-slider {
@@ -537,13 +591,13 @@ body ul {
 .features-list-down a {
   display: block;
   position: relative;
-  width: 135px;
-  height: 38px;
+  min-width: 135px;
+  min-height: 38px;
   margin-top: 13px;
-  margin-left: 2px;
+  margin-left: 1px;
   padding-top: 11px;
-  padding-right: 21px;
-  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-bottom: 9px;
   padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -717,17 +771,16 @@ body ul {
 .slider-item a {
   display: block;
   position: absolute;
-  width: 195px;
-  height: 38px;
+  min-width: 195px;
+  min-height: 36px;
   margin-top: 122px;
   padding-top: 11px;
   padding-right: 45px;
-  padding-bottom: 12px;
-  padding-left: 48px;
+  padding-bottom: 9px;
+  padding-left: 50px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
   background-color: #ee3643;
   border-radius: 3px;

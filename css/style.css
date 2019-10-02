@@ -499,19 +499,19 @@ body ul {
   background-color: #1d2739
 }
 
-.features-upper-container {
+.features-slider {
+  display: flex;
+  flex-wrap: wrap;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 60px;
+  padding-top: 59px;
 }
 
 .features-list-upper {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
-
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -521,55 +521,247 @@ body ul {
 .features-list-upper li {
   width: 300px;
   height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 139px;
+  padding-bottom: 23px;
+  padding-left: 22px;
 }
 
-.features-list-upper p {
-  margin: 0;
-  padding: 0;
+.features-list-upper li:last-child {
+  margin-right: 0;
 }
 
-.features-list-upper a {
+.features-list-upper a,
+.features-list-down a {
+  display: block;
+  position: relative;
+  width: 135px;
+  height: 38px;
+  margin-top: 13px;
+  margin-left: 2px;
+  padding-top: 11px;
+  padding-right: 21px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
-  background-color: #e5e5e5
 }
 
-.features-list-upper a:hover {
-  background-color: #cccccc
+.features-list-upper a::before,
+.features-list-down a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 135px;
+  height: 38px;
+  background-color: #000000;
+  opacity: 0.1;
+  border-radius: 3px;
 }
 
-.features-list-upper a:active {
-  background-color: #b2b2b2
+.features-list-upper a:hover::before,
+.features-list-down a:hover::before {
+  opacity: 0.2;
+}
+
+.features-list-upper a:active::before,
+.features-list-down a:active::before {
+  opacity: 0.3;
 }
 
 .feature-materials {
+  position: relative;
   background-color: #ffbf47;
 }
 
+.feature-materials::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 213px;
+  width: 51px;
+  height: 67px;
+  background-image: url("../img/icon-bank.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .feature-tools {
+  position: relative;
   background-color: #3bbce3;
 }
 
+.feature-tools::after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 197px;
+  width: 81px;
+  height: 67px;
+  background-image: url("../img/icon-drill.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .feature-technique {
+  position: relative;
   background-color: #dc91d8;
 }
 
-.features-slider-container {
-  display: flex;
-  justify-content: space-between;
-
-  width: 960px;
-  min-height: 266px;
-  margin: 0 auto;
-  padding: 0 10px;
-  padding-top: 20px;
+.feature-technique::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 191px;
+  width: 92px;
+  height: 67px;
+  background-image: url("../img/icon-tractor.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-/* Здесь будет стилизация слайдера */
+.slider-container {
+  position: relative;
+  width: 620px;
+  height: 266px;
+  margin-right: 20px;
+  background-color: #584e44;
+  background-image: url("../img/slider-drill.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 36px;
+  left: 295px;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.control-left::before {
+  content: "";
+  position: absolute;
+  top: -108px;
+  left: -272px;
+  width: 51px;
+  height: 67px;
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.control-rigth::before {
+  content: "";
+  position: absolute;
+  top: -108px;
+  left: 261px;
+  width: 51px;
+  height: 67px;
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-left: 25px;
+
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.slider-item a {
+  display: block;
+  position: absolute;
+  width: 195px;
+  height: 38px;
+  margin-top: 122px;
+  padding-top: 11px;
+  padding-right: 45px;
+  padding-bottom: 12px;
+  padding-left: 48px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.slider-item a:hover {
+  background-color: #ca2c37;
+}
+
+.slider-item a:active {
+  background-color: #ba2732;
+}
+
+#product-1:checked ~ .slider-container .slider-list #slide1,
+#product-2:checked ~ .slider-container .slider-list #slide2 {
+  display: block;
+}
+
+#product-1:checked ~ .slider-container .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-container .slider-controls label[for="product-2"] {
+  background-color: #ee3643;
+}
+
+#product-1:checked ~ .slider-container {
+  background-image: url("../img/slider-drill.jpg");
+}
+
+#product-2:checked ~ .slider-container {
+  background-image: url("../img/slider-perforator.jpg");
+}
 
 .features-list-down {
   margin: 0;
   padding: 0;
-
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -579,34 +771,49 @@ body ul {
 .features-list-down li {
   width: 300px;
   height: 123px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 139px;
+  padding-bottom: 23px;
+  padding-left: 22px;
 }
 
-.features-list-down p {
-  margin: 0;
-  padding: 0;
-}
-
-.features-list-down a {
-  color: #ffffff;
-  background-color: #e5e5e5
-}
-
-.features-list-down a:hover {
-  background-color: #cccccc
-}
-
-.features-list-down a:active {
-  background-color: #b2b2b2
+.features-list-down li:last-child {
+  margin-bottom: 0;
 }
 
 .feature-sales {
-  margin-bottom: 20px;
-
+  position: relative;
   background-color: #8ed78f;
 }
 
+.feature-sales::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 196px;
+  width: 62px;
+  height: 73px;
+  background-image: url("../img/icon-sales.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .feature-delivery {
+  position: relative;
   background-color: #ffc047;
+}
+
+.feature-delivery::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 191px;
+  width: 81px;
+  height: 67px;
+  background-image: url("../img/icon-van.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .popular-goods {

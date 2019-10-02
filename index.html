@@ -72,60 +72,53 @@
     </header>
     <main>
       <section class="features-slider">
-        <div class="features-upper-container">
-          <h2 class="visually-hidden">Товары и услуги компании «Техномарт»</h2>
-          <ul class="features-list-upper">
-            <li class="feature-materials new">
-              <p>Материалы</p>
-              <a href="#">На любой вкус</a>
-              <img src="img/icon-cart.svg"  width="43" height="65" alt="Банка с краской">
-            </li>
-            <li class="feature-tools">
-              <p>Инструмент</p>
-              <a href="#">На все случаи</a>
-              <img src="img/icon-drill.svg"  width="75" height="61" alt="Дрель">
-            </li>
-            <li class="feature-technique">
-              <p>Техника</p>
-              <a href="#">Для стройки</a>
-              <img src="img/icon-tractor.svg"  width="78" height="62" alt="Трактор">
-            </li>
-          </ul>
-        </div>
-        <div class="features-slider-container">
-          <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
-            <!-- Здесь будет разметка слайдера -->
-            <!-- <h2 class="visually-hidden">Слайдер с товарами</h2>
-            <ul class="slider-content">
-              <li class="drill">
-                <h3 class="visually-hidden">Дрели</h3>
-                <p class="visually-hidden">Соседям на радость!</p>
-                <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+        <h2 class="visually-hidden">Товары и услуги магазина «Техномарт»</h2>
+        <ul class="features-list-upper">
+          <li class="feature-materials new">
+            <b>Материалы</b>
+            <a href="#">На любой вкус</a>
+          </li>
+          <li class="feature-tools">
+            <b>Инструмент</b>
+            <a href="#">На все случаи</a>
+          </li>
+          <li class="feature-technique">
+            <b>Техника</b>
+            <a href="#">Для стройки</a>
+          </li>
+        </ul>
+        <section class="slider">
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <div class="slider-container">
+            <div class="slider-controls">
+              <label class="control-left" for="product-1">Первый</label>
+              <label class="control-rigth" for="product-2">Второй</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item slide" id="slide1">
+                <h3 class="slide-title">Дрели</h3>
+                <p>Соседям на радость!</p>
+                <a href="">Открыть каталог</a>
               </li>
-              <li class="perforator visually-hidden">
-                <h3>Перфораторы</h3>
+              <li class="slider-item slide" id="slide2">
+                <h3 class="slide-title">Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
-                <img src="img/slider-perforator.jpg" width="620" height="266" alt="Дрели">
-              </li>
-            </ul>
-            <a class="button slider-catalog visually-hidden" href="catalog.html">Открыть каталог</a>
-            <button class="button slider-back visually-hidden" type="button">Назад</button>
-            <button class="button slider-next visually-hidden" type="button">Вперед</button> -->
-          <div class="features-down-container">
-            <ul class="features-list-down">
-              <li class="feature-sales">
-                <p>Скидки 50%</p>
-                <a href="#">На 350 товаров</a>
-                <img src="img/icon-cart.svg"  width="59" height="72" alt="Корзина">
-              </li>
-              <li class="feature-delivery">
-                <p>Доставка</p>
-                <a href="#">Бесплатно</a>
-                <img src="img/icon-van.svg"  width="78" height="63" alt="Фургон">
+                <a href="">Открыть каталог</a>
               </li>
             </ul>
           </div>
-        </div>
+        </section>
+        <ul class="features-list-down">
+          <li class="feature-sales">
+            <b>Скидки 50%</b>
+            <a href="#">На 350 товаров</a>
+          </li>
+          <li class="feature-delivery">
+            <b>Доставка</b>
+            <a href="#">Бесплатно</a>
+          </li>
+        </ul>
       </section>
 
       <section class="popular-goods">

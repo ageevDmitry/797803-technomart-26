@@ -140,7 +140,6 @@ body ul {
   margin: 0;
   padding-left: 47px;
   font-family: inherit;
-  /* background-image: url("../img/icon-search.svg"); */
   background-position: 15px 10px;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -1194,21 +1193,66 @@ body ul {
   opacity: 0.3
 }
 
-.services-upper-container {
+.serviсes {
+  width: auto;
+  min-height: 320px;
+  margin-top: 85px;
+
+  background-color: #f4f7f9;
+}
+
+.serviсes .center-container {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 144px;
+  padding-top: 66px;
 }
 
-.services-upper-container h2 {
+.serviсes h2 {
   margin: 0;
   padding: 0;
 
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
+
+.serviсes p {
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  width: 400px;
+  min-height: 40px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.serviсes-slider {
+  display: flex;
+}
+
+.serviсes-slider-controls {
+  margin: 0;
+  padding: 0;
+}
+
+.serviсes-slider-controls label {
+  display: block;
+  width: 240px;
+  height: 62px;
+}
+
+/* .services-upper-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 144px;
+}
+
 
 .services-upper-container p {
   margin: 0;
@@ -1259,9 +1303,19 @@ body ul {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+} */
+
+
+.serviсes-slide {
+  display: none;
 }
 
-/* Здесь будет стилизация слайдера */
+#serviсes-delivery:checked~.serviсes-slider-list #slide-delivery,
+#serviсes-guarantee:checked~.serviсes-slider-list #slide-garantee,
+#serviсes-credit:checked~.serviсes-slider-list #slide-credit {
+  display: block;
+}
+
 
 .info-contacts-container {
   display: flex;

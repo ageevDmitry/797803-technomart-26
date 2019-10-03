@@ -549,7 +549,7 @@ body ul {
 }
 
 .navigation-contacts {
-  padding-right: 54px;
+  padding-right: 53px;
   padding-left: 29px;
 }
 
@@ -964,10 +964,8 @@ body ul {
   margin-top: 20px;
   margin-right: 20px;
   padding: 0;
-
   width: 220px;
   height: 318px;
-
   border: 1px solid #e4e4e4;
 }
 
@@ -993,7 +991,7 @@ body ul {
 }
 
 .good-item:hover .action {
-  display: flex;
+  display: block;
 }
 
 .good-item:hover .good-img {
@@ -1007,6 +1005,7 @@ body ul {
 
 .good-item h3 {
   order: 1;
+  width: 218px;
   margin: 0;
   padding: 0;
   padding-top: 8px;
@@ -1064,14 +1063,12 @@ body ul {
 
 .good-item .action {
   display: none;
-  flex-direction: column;
   position: absolute;
-  margin-top: -1px;
-  padding-top: 45px;
-  padding-right: 42px;
-  padding-left: 42px;
-  width: 220px;
-  height: 170px;
+  top: 20px;
+  left: 0px;
+  padding-top: 23px;
+  padding-left: 41px;
+  padding-bottom: 20px;
   background-color: #ffffff;
 }
 
@@ -1193,7 +1190,8 @@ body ul {
 }
 
 .productions-list a:active .production-img {
-  filter: grayscale(0.7);
+  /* filter: grayscale(0.7); */
+  opacity: 0.3
 }
 
 .services-upper-container {

@@ -1195,16 +1195,17 @@ body ul {
 
 .serviсes {
   width: auto;
-  min-height: 522px;
   margin-top: 85px;
   background-color: #f4f7f9;
 }
 
 .serviсes .center-container {
   width: 960px;
+  min-height: 523px;
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 66px;
+  padding-bottom: 90px;
 }
 
 .serviсes h2 {
@@ -1226,10 +1227,10 @@ body ul {
 .serviсes-slider::after {
   content: "";
   position: absolute;
-  top: 29px;
+  top: 37px;
   left: 230px;
-  width: 20px;
-  height: 272px;
+  width: 50px;
+  height: 271px;
   background-image: url("../img/service-slider-line.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1261,6 +1262,54 @@ body ul {
   background-color: #293449;
 }
 
+.serviсes-slider-list {
+  position: relative;
+  margin: 0;
+  margin-left: 79px;
+  padding: 0;
+}
+
+.serviсes-slider-item {
+  display: none;
+  position: relative;
+}
+
+.delivery::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 152px;
+  width: 474px;
+  height: 285px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.guarantee::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 240px;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.credit::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 166px;
+  width: 465px;
+  height: 280px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .serviсes h3 {
   margin: 0;
   padding: 0;
@@ -1289,38 +1338,42 @@ body ul {
 }
 
 .serviсes-slider-item
-.delivery-description-up {
+.delivery-description {
   width: 276px;
 }
 
 .serviсes-slider-item
-.delivery-description-down {
-  width: 220px;
-  padding: 0;
-}
-
-.serviсes-slider-item
 .garantee-description {
-  width: 372px;
+  width: 377px;
 }
 
 .serviсes-slider-item
 .credit-description {
-  width: 278px;
+  width: 280px;
 }
 
 .credit-request {
   display: block;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  width: 195px;
+  margin-top: 24px;
+  padding-top: 11px;
+  padding-right: 43px;
+  padding-bottom: 9px;
+  padding-left: 45px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #ee3643;
   border-radius: 3px;
+}
+
+.credit-request:hover {
+  background-color: #c92c37;
+}
+
+.credit-request:active {
+  background-color: #ba2632;
 }
 
 #serviсes-delivery:checked~.serviсes-slider-controls label[for="serviсes-delivery"],
@@ -1332,18 +1385,8 @@ body ul {
   border-bottom: 1px solid #ffffff;
 }
 
-.serviсes-slider-list {
-  margin: 0;
-  margin-left: 79px;
-  padding: 0;
-}
-
-.serviсes-slide {
-  display: none;
-}
-
 #serviсes-delivery:checked~.serviсes-slider-list #slide-delivery,
-#serviсes-guarantee:checked~.serviсes-slider-list #slide-garantee,
+#serviсes-guarantee:checked~.serviсes-slider-list #slide-guarantee,
 #serviсes-credit:checked~.serviсes-slider-list #slide-credit {
   display: block;
 }

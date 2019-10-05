@@ -1210,7 +1210,7 @@ body ul {
 
 .serviсes {
   width: auto;
-  margin-top: 85px;
+  margin-top: 83px;
   background-color: #f4f7f9;
 }
 
@@ -1219,8 +1219,8 @@ body ul {
   min-height: 523px;
   margin: 0 auto;
   padding: 0px 10px;
-  padding-top: 64px;
-  padding-bottom: 90px;
+  padding-top: 66px;
+  padding-bottom: 82px;
 }
 
 .serviсes h2 {
@@ -1409,63 +1409,81 @@ body ul {
   display: flex;
   justify-content: space-between;
   width: 960px;
-  min-height: 535px;
+  min-height: 534px;
   margin: 0 auto;
-  padding: 0 10px;
-  padding-top: 82px;
+  padding: 0px 10px;
+  padding-top: 79px;
+  padding-bottom: 60px;
 }
 
 .info-company {
   width: 520px;
-  min-height: 368px;
 }
 
 .info-company h2 {
   margin: 0;
   padding: 0;
-
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .info-company p {
   margin: 0;
-  margin-top: 39px;
+  margin-top: 26px;
   padding: 0;
-
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
 
-.delivery-company-description {
-  width: 390px;
-}
-
 .delivery-company-list {
   margin: 0;
-  margin-top: 29px;
+  margin-top: 0px;
   margin-left: 36px;
   padding: 0;
   list-style-type: none;
 }
 
-.delivery-company-list p {
+.delivery-company-list li {
+  position: relative;
   margin: 0;
-  margin-top: 27px;
-  padding: 0;
+  padding-top: 20px;
 }
 
+.delivery-company-list li b {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.delivery-company-list li::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+
 .info-company a {
-  margin-top: 37px;
+  display: block;
   width: 220px;
   height: 38px;
+  margin-top: 35px;
+  padding-top: 11px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #ee3643;
+  border-radius: 3px;
 }
 
 .info-company a:hover {
@@ -1491,15 +1509,15 @@ body ul {
 .contacts h2 {
   margin: 0;
   padding: 0;
-
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .contacts p {
   margin: 0;
-  margin-top: 39px;
+  margin-top: 26px;
   padding: 0;
   width: 180px;
   min-height: 36px;
@@ -1511,22 +1529,29 @@ body ul {
 }
 
 .contacts-map {
-  margin-top: 36px;
+  margin-top: 31px;
 }
 
-.contacts button {
+.contacts-write-us {
+  display: block;
+  margin-top: 36px;
+  padding-top: 10px;
+  padding-right: 59px;
+  padding-bottom: 10px;
+  padding-left: 64px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #ee3643;
-  border: none;
+  border-radius: 3px;
 }
 
-.contacts button:hover {
+.contacts a:hover {
   background-color: #ca2c37;
 }
 
-.contacts button:active {
+.contacts a:active {
   background-color: #ba2732;
 }
 

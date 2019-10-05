@@ -298,7 +298,8 @@
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="delivery-company-description">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт&nbsp;работает&nbsp;со&nbsp;многими транспортными компаниями:</p>
+        <p class="delivery-company-description">Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт&nbsp;работает&nbsp;со&nbsp;многими транспортными компаниями:</p>
         <ul class="delivery-company-list">
           <li>
             <b>Деловые линии</b>
@@ -395,34 +396,42 @@
     </div>
   </footer>
 
-  <!-- <section class="visually-hidden">
-      <h2 class="visually-hidden">Форма отбратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="user-name">Ваше имя:</label>
+  <section class="popap-write-us">
+    <h2 class="visually-hidden">Форма отбратной связи</h2>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-container-up">
+        <div class="form-user-name">
+          <p>Ваше имя:</p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-mail">Ваш e-mail:</label>
-          <input id="user-mail" type="text" name="mail" value="" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="user-message">Текст письма:</label>
-          <input id="user-message" type="text" name="massage" value="" placeholder="В свободной форме">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button type="button">Закрыть</button>
-    </section>
+        </div>
+        <div class="form-user-mail">
+          <p>Ваш e-mail:</p>
+          <label class="visually-hidden" for="user-mail">Ваш e-mail:</label>
+          <input  id="user-mail" type="text" name="mail" value="" placeholder="email@example.com">
+        </div>
+        <div class="form-user-message">
+          <p>Текст письма:</p>
+          <label class="visually-hidden" for="user-message">Текст письма:</label>
+          <textarea  id="user-message" type="text" name="message" value=""
+            placeholder="В свободной форме" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="form-container-down">
+        <button class="send-message" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="close-popap" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
 
-    <section class="visually-hidden">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-        <img src="img/map-popap.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
-      <button type="button">Закрыть</button>
-    </section> -->
-
+  <section class="visually-hidden">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <img src="img/map-popap.png" width="940" height="446"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>

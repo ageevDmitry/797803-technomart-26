@@ -459,25 +459,68 @@ body ul {
 
 .login-container {
   width: 300px;
-  height: 45px;
-
+  padding-top: 12px;
+  padding-right: 67px;
+  padding-bottom: 12px;
+  padding-left: 47px;
   background-color: #ffffff;
 }
 
 .header-user-login {
+  display: block;
+  position: relative;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
+.header-user-login svg {
+  position: absolute;
+  top: 1px;
+  left: -33px;
+}
+
 .header-user-login:active {
-  color: #ee3643;
+  color: #bcbcbc;
+}
+
+.header-user-login:hover path {
+  fill: #32425c;
+}
+
+.header-user-login:active path {
+  fill: #c5c5c5;
+}
+
+.header-user-out {
+  display: block;
+  position: relative;
+}
+
+.header-user-out svg {
+  position: absolute;
+  top: -19px;
+  right: -57px;
+}
+
+.header-user-out:hover path {
+  fill: #32425c;
+}
+
+.header-user-out:active path {
+  fill: #bcbcbc;
 }
 
 .header-user-sales {
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-top: 7px;
+  padding-left: 18px;
+  padding-bottom: 7px;
+  padding-right: 18px;
 }
 
 .header-user-sales li {
@@ -497,6 +540,21 @@ body ul {
 
 .header-user-sales a:active {
   color: #cacaca
+}
+
+.header-user-orders {
+  position: relative;
+}
+
+.header-user-orders::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -19px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
 }
 
 .site-navigation-list {
@@ -1819,8 +1877,7 @@ body ul {
   background-color: #32425c;
 }
 
-.footer-upper-container
-.center-container {
+.footer-upper-container .center-container {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -1919,8 +1976,7 @@ body ul {
   background-color: #293449;
 }
 
-.footer-down-container
-.center-container {
+.footer-down-container .center-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1942,7 +1998,6 @@ body ul {
 
 .social-link-list {
   display: flex;
-  /* justify-content: space-between; */
   align-items: flex-start;
   flex-wrap: wrap;
   width: 219px;
@@ -1965,22 +2020,19 @@ body ul {
   border-radius: 50%;
 }
 
-.social-link-list
-.vkontakte {
+.social-link-list .vkontakte {
   background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: 6px 13px;
 }
 
-.social-link-list
-.facebook {
+.social-link-list .facebook {
   background-image: url("../img/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: 13px 8px;
 }
 
-.social-link-list
-.instagram {
+.social-link-list .instagram {
   background-image: url("../img/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: 9px 9px;
@@ -2158,7 +2210,7 @@ body ul {
 }
 
 .popap-map {
-  display: block;
+  display: none;
   position: fixed;
   top: 68px;
   left: 50%;

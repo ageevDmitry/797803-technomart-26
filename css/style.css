@@ -1049,10 +1049,12 @@ body ul {
   border: 1px solid #e4e4e4;
 }
 
+.popular-goods
 .good-item:nth-child(4n) {
   margin-right: 0px;
 }
 
+.popular-goods
 .good-item:nth-child(4)::before {
   content: "";
   position: absolute;
@@ -2092,8 +2094,7 @@ body ul {
   text-transform: uppercase;
 }
 
-.catalog-sort
-.catalog-sort-type {
+.catalog-sort .catalog-sort-type {
   width: 355px;
   margin-left: 96px;
 }
@@ -2102,8 +2103,7 @@ body ul {
   fill: #000000;
 }
 
-.catalog-sort
-.catalog-sort-direction {
+.catalog-sort .catalog-sort-direction {
   width: 43px;
 }
 
@@ -2141,12 +2141,58 @@ body ul {
   fill: #ee3643;
 }
 
-.catalog-goods .goods-list {
-  width: auto;
+.catalog-sort-perforators
+.goods-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 700px;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog-goods .good-item:nth-child(3n) {
+.catalog-sort-perforators
+.good-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.catalog-sort-perforators
+.good-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -15px;
+  width: 74px;
+  height: 63px;
+  background-image: url("../img/flag-new.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-sort-perforators
+.good-item:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -15px;
+  width: 74px;
+  height: 63px;
+  background-image: url("../img/flag-new.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-sort-perforators
+.good-item:nth-child(7)::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -15px;
+  width: 74px;
+  height: 63px;
+  background-image: url("../img/flag-new.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-pagination-container {

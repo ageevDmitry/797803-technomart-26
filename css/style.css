@@ -181,27 +181,27 @@ body ul {
   display: none;
 }
 
-.header-search input[type="search"]::placeholder {
+.header-search input[type='search']::placeholder {
   color: #ffffff;
 }
 
-.header-search input[type="search"]::-webkit-input-placeholder {
+.header-search input[type='search']::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type="search"]:-moz-placeholder {
+.header-search input[type='search']:-moz-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type="search"]::-moz-placeholder {
+.header-search input[type='search']::-moz-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type="search"]:-ms-input-placeholder {
+.header-search input[type='search']:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type="search"]::-ms-input-placeholder {
+.header-search input[type='search']::-ms-input-placeholder {
   color: #ffffff;
 }
 
@@ -236,11 +236,15 @@ body ul {
   min-width: 150px;
   min-height: 42px;
   padding-top: 12px;
-  padding-right: 30px;
+  padding-right: 19px;
   padding-bottom: 12px;
-  padding-left: 48px;
+  padding-left: 43px;
   text-align: center;
   color: #ffffff;
+}
+
+.catalog-header-cart {
+  background-color: #ee3642;
 }
 
 .header-cart::before {
@@ -261,9 +265,9 @@ body ul {
   min-width: 150px;
   min-height: 42px;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 21px;
   padding-bottom: 12px;
-  padding-left: 22px;
+  padding-left: 21px;
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -1846,10 +1850,13 @@ body ul {
   background-color: #444444;
 }
 
-.price-controls input {
+.price-controls input[type='text'] {
   width: 95px;
   height: 38px;
   text-align: center;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   background-color: #f7f3ec;
   border-color: transparent;
   border-radius: 3px;
@@ -1859,7 +1866,6 @@ body ul {
   margin: 0;
   margin-top: 16px;
   padding: 0;
-  padding-bottom: 25px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1874,13 +1880,77 @@ body ul {
   text-transform: uppercase;
 }
 
+.catalog-filter-productions ul {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-productions li {
+  margin: 0;
+  margin-top: 14px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 34px;
+  padding: 0;
+}
+
+.catalog-filter-productions input[type='checkbox'],
+.catalog-filter-power input[type='radio'] {
+   display: none;
+ }
+
+.catalog-filter-productions label {
+  position: relative;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog-filter-productions label:active {
+  color: #b9b9b9;
+}
+
+.catalog-filter-productions input + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/icon-checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.catalog-filter-productions input:hover + label::before {
+  opacity:  1;
+}
+
+.catalog-filter-productions input:checked + label::before {
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.catalog-filter-productions input:disabled + label {
+  cursor: default;
+  opacity:  0.3;
+}
+
+.catalog-filter-productions input:disabled + label::before {
+  cursor: default;
+}
+
+.catalog-filter-productions input:disabled:hover + label::before {
+  opacity:  0.6;
+}
+
 .catalog-filter-power {
   margin: 0;
-  margin-top: 11px;
+  margin-top: 18px;
   padding: 0;
-  padding-bottom: 25px;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-filter-power legend {
@@ -1893,33 +1963,89 @@ body ul {
   text-transform: uppercase;
 }
 
-.catalog-filter-productions ul,
 .catalog-filter-power ul {
   margin: 0;
   padding: 0;
 }
 
-.catalog-filter-productions li,
 .catalog-filter-power li {
   margin: 0;
+  margin-top: 14px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 36px;
   padding: 0;
 }
 
-.catalog-filter-productions label,
-.catalog-filter-power label {
-  font-size: 15px;
-  line-height: 20px;
-  text-transform: uppercase;
+.catalog-filter-power input[type='checkbox'] {
+  display: none;
 }
 
+.catalog-filter-power label {
+ position: relative;
+ font-size: 15px;
+ line-height: 20px;
+ text-transform: uppercase;
 
+ cursor: pointer;
+}
 
+.catalog-filter-power input + label::before {
+ content: "";
+ position: absolute;
+ top: -2px;
+ left: -36px;
+ width: 24px;
+ height: 24px;
+ border: 3px solid #b9b9b9;
+ border-radius: 50%;
+ cursor: pointer;
+ opacity: 0.6;
+}
 
+.catalog-filter-power input:checked + label::after {
+ content: "";
+ position: absolute;
+ top: 5px;
+ left: -29px;
+ width: 10px;
+ height: 10px;
+ background-color: #b9b9b9;
+ border-radius: 50%;
+ cursor: pointer;
+ opacity: 0.6;
+}
 
-.catalog-filter button {
+.catalog-filter-power input:hover + label::before,
+.catalog-filter-power input:hover + label::after {
+  opacity:  1;
+}
+
+.catalog-filter-power input:disabled + label {
+  cursor: default;
+  opacity:  0.3;
+}
+
+.catalog-filter-power input:disabled + label::before,
+.catalog-filter-power input:disabled + label::after {
+  cursor: default;
+}
+
+.catalog-filter-power input:disabled:hover + label::before,
+.catalog-filter-power input:disabled:hover + label::after {
+  opacity:  0.6;
+}
+
+.form-button-submit {
+  display: block;
+  width: 140px;
+  height: 38px;
+  margin-top: 59px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
   background-color: transparent;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -2342,7 +2468,7 @@ body ul {
   font-weight: 700;
 }
 
-.form-container-up input[type="text"] {
+.form-container-up input[type='text'] {
   width: 220px;
   height: 38px;
   margin: 0;
@@ -2361,7 +2487,7 @@ body ul {
   width: 460px;
 }
 
-.form-container-up textarea[type="text"] {
+.form-container-up textarea[type='text'] {
   width: 460px;
   height: 114px;
   margin: 0;
@@ -2416,10 +2542,20 @@ body ul {
   z-index: 20;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

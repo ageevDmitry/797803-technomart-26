@@ -313,7 +313,7 @@ body ul {
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 46px;
-  padding-bottom: 61px;
+  padding-bottom: 60px;
 }
 
 .technomart-description {
@@ -396,7 +396,7 @@ body ul {
   position: relative;
   min-width: 121px;
   min-height: 45px;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-right: 26px;
   padding-bottom: 12px;
   padding-left: 47px;
@@ -1620,65 +1620,127 @@ body ul {
 /* Здесь начинается стилизация каталога */
 
 .catalog {
-  padding-top: 25px;
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
-.catalog-navigation {
+.breadcrumbs {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 21px;
+  padding-left: 10px;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-home {
+  position: relative;
+}
+
+.breadcrumbs-home a {
+  position: relative;
+}
+
+.breadcrumbs-home a::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -2px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.breadcrumbs-home:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 28px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs-catalog {
+  position: relative;
+  margin-left: 54px;
+}
+
+.breadcrumbs-catalog:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 69px;
+  width: 10px;
+  height: 16px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs-tools {
+  position: relative;
+  margin-left: 40px;
+}
+
+.breadcrumbs-tools:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 98px;
+  width: 10px;
+  height: 13px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs-perforators {
+  position: relative;
+  margin-left: 43px;
+}
+
+.catalog-peforators
+.center-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.catalog-navigation ul {
-  display: flex;
-  width: auto;
-  min-height: 35px;
-  margin: 0;
-  margin-left: 54px;
-  padding: 0;
-}
-
-.catalog-navigation li {
-  margin: 0;
-  padding: 0;
-  margin-right: 43px;
-
-  font-size: 13px;
-  font-weight: 400;
-  color: #000000;
-}
-
-.catalog-navigation a {
-  font-size: 13px;
-  font-weight: 400;
-  color: #000000;
-}
-
 .catalog-title {
   width: 940px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  padding-top: 33px;
-  min-height: 89px;
+  padding-top: 30px;
+  padding-right: 27px;
+  padding-bottom: 29px;
+  padding-left: 27px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  text-transform: uppercase;
   background-color: #f2f6f8;
-}
-
-.catalog-title h2 {
-  margin: 0;
-  margin-left: 30px;
-  padding: 0;
-}
-
-.catalog .center-container {
-  display: flex;
-  width: 940px;
-  margin: 0 auto;
-  padding-top: 20px;
 }
 
 .catalog-filter {
@@ -1686,45 +1748,173 @@ body ul {
 }
 
 .catalog-filter h3 {
-  width: auto;
-  min-height: 38px;
   margin: 0;
-  padding: 0;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-left: 18px;
   font-size: 13px;
-  line-height: 18px;
   font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   background-color: #f7f3ec;
   border-radius: 3px;
 }
 
-.catalog-filter p {
+.catalog-filter-price {
   margin: 0;
+  margin-top: 11px;
   padding: 0;
-}
-
-.catalog-filter ul {
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-filter fieldset {
+  padding-bottom: 25px;
   border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.catalog-filter legend {
+.catalog-filter-price legend {
+  margin: 0;
+  padding: 0;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.catalog-filter label {
+.range-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 220px;
+  min-height: 80px;
+  margin-top: 14px;
+  background-color: #f7f3ec;
+  border-radius: 4px;
+}
+
+.range-controls .scale {
+  width: 180px;
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 20px;
+}
+
+.range-toggle-max {
+  right: 40px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  width: 220px;
+  margin-top: 9px;
+}
+
+.price-controls::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 106px;
+  width: 9px;
+  height: 1px;
+  background-color: #444444;
+}
+
+.price-controls input {
+  width: 95px;
+  height: 38px;
+  text-align: center;
+  background-color: #f7f3ec;
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+.catalog-filter-productions {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  padding-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-filter-productions legend {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-filter-power {
+  margin: 0;
+  margin-top: 11px;
+  padding: 0;
+  padding-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-filter-power legend {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-filter-productions ul,
+.catalog-filter-power ul {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-productions li,
+.catalog-filter-power li {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-productions label,
+.catalog-filter-power label {
   font-size: 15px;
   line-height: 20px;
-  font-weight: 400;
-  color: #000000
+  text-transform: uppercase;
 }
+
+
+
+
 
 .catalog-filter button {
   font-size: 13px;
@@ -1733,6 +1923,10 @@ body ul {
   background-color: transparent;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+}
+
+.catalog-sort-perforators {
+  width: 700px;
 }
 
 .sort-goods-container {

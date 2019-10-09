@@ -218,6 +218,7 @@ body ul {
 }
 
 .header-bookmarks::before {
+  display:block;
   content: "";
   position: absolute;
   top: 12px;
@@ -248,6 +249,7 @@ body ul {
 }
 
 .header-cart::before {
+  display:block;
   content: "";
   position: absolute;
   top: 12px;
@@ -355,6 +357,7 @@ body ul {
 }
 
 .header-phone::before {
+  display:block;
   content: "";
   position: absolute;
   top: 10px;
@@ -551,6 +554,7 @@ body ul {
 }
 
 .header-user-orders::after {
+  display:block;
   content: "";
   position: absolute;
   top: 7px;
@@ -660,7 +664,7 @@ body ul {
   z-index: 1;
 }
 
-.features-list-upper li:nth-child(1)::before {
+.features-flag-new:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -698,6 +702,7 @@ body ul {
 
 .features-list-upper a::before,
 .features-list-down a::before {
+  display:block;
   content: "";
   position: absolute;
   top: 0px;
@@ -726,6 +731,7 @@ body ul {
 }
 
 .feature-materials::after {
+  display:block;
   content: "";
   position: absolute;
   top: 31px;
@@ -743,6 +749,7 @@ body ul {
 }
 
 .feature-tools::after {
+  display:block;
   content: "";
   position: absolute;
   top: 33px;
@@ -760,6 +767,7 @@ body ul {
 }
 
 .feature-technique::after {
+  display:block;
   content: "";
   position: absolute;
   top: 31px;
@@ -804,6 +812,7 @@ body ul {
 }
 
 .control-left::before {
+  display:block;
   content: "";
   position: absolute;
   top: -108px;
@@ -816,6 +825,7 @@ body ul {
 }
 
 .control-rigth::before {
+  display:block;
   content: "";
   position: absolute;
   top: -108px;
@@ -932,6 +942,7 @@ body ul {
 }
 
 .feature-sales::after {
+  display:block;
   content: "";
   position: absolute;
   top: 27px;
@@ -949,6 +960,7 @@ body ul {
 }
 
 .feature-delivery::after {
+  display:block;
   content: "";
   position: absolute;
   top: 32px;
@@ -1036,6 +1048,7 @@ body ul {
 
 .good-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -1053,7 +1066,8 @@ body ul {
   margin-right: 0px;
 }
 
-.popular-goods .good-item:nth-child(4)::before {
+.good-flag-new::before {
+  display:block;
   content: "";
   position: absolute;
   top: -2px;
@@ -1129,6 +1143,7 @@ body ul {
 }
 
 .good-price::before {
+  display:block;
   content: "";
   position: absolute;
   top: -1px;
@@ -1172,6 +1187,7 @@ body ul {
 }
 
 .good-buy::after {
+  display:block;
   content: "";
   position: absolute;
   top: 11px;
@@ -1309,6 +1325,7 @@ body ul {
 }
 
 .serviсes-slider::after {
+  display:block;
   content: "";
   position: absolute;
   top: 26px;
@@ -1359,6 +1376,7 @@ body ul {
 }
 
 .delivery::before {
+  display:block;
   content: "";
   position: absolute;
   top: 25px;
@@ -1371,6 +1389,7 @@ body ul {
 }
 
 .guarantee::before {
+  display:block;
   content: "";
   position: absolute;
   top: 3px;
@@ -1383,6 +1402,7 @@ body ul {
 }
 
 .credit::before {
+  display:block;
   content: "";
   position: absolute;
   top: 0px;
@@ -1526,6 +1546,7 @@ body ul {
 }
 
 .delivery-company-list li::after {
+  display:block;
   content: "";
   position: absolute;
   top: 28px;
@@ -1657,6 +1678,7 @@ body ul {
 }
 
 .breadcrumbs-home a::before {
+  display:block;
   content: "";
   position: absolute;
   top: 2px;
@@ -1841,6 +1863,7 @@ body ul {
 }
 
 .price-controls::before {
+  display:block;
   content: "";
   position: absolute;
   top: 19px;
@@ -1912,6 +1935,7 @@ body ul {
 }
 
 .catalog-filter-productions input+label::before {
+  display:block;
   content: "";
   position: absolute;
   top: -2px;
@@ -1991,6 +2015,7 @@ body ul {
 }
 
 .catalog-filter-power input+label::before {
+  display:block;
   content: "";
   position: absolute;
   top: -2px;
@@ -2004,6 +2029,7 @@ body ul {
 }
 
 .catalog-filter-power input:checked+label::after {
+  display:block;
   content: "";
   position: absolute;
   top: 5px;
@@ -2154,30 +2180,7 @@ body ul {
 }
 
 .catalog-sort-perforators .good-item:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -15px;
-  width: 74px;
-  height: 63px;
-  background-image: url("../img/flag-new.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.catalog-sort-perforators .good-item:nth-child(5)::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -15px;
-  width: 74px;
-  height: 63px;
-  background-image: url("../img/flag-new.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.catalog-sort-perforators .good-item:nth-child(7)::before {
+  display:block;
   content: "";
   position: absolute;
   top: -2px;
@@ -2497,13 +2500,12 @@ body ul {
   color: #ee3643;
 }
 
-.popap-write-us {
-  /* display: none; */
+.popup-write-us {
   position: fixed;
   top: 120px;
   left: 50%;
   width: 620px;
-  height: 430px;
+  min-height: 430px;
   margin-left: -310px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
@@ -2515,7 +2517,7 @@ body ul {
   z-index: 20;
 }
 
-.close-popap {
+.close-popup {
   display: block;
   position: absolute;
   background-color: transparent;
@@ -2527,7 +2529,8 @@ body ul {
   height: 25px;
 }
 
-.close-popap::before {
+.close-popup::before {
+  display:block;
   content: "";
   position: absolute;
   top: 2px;
@@ -2549,6 +2552,7 @@ body ul {
   padding-right: 80px;
   padding-bottom: 34px;
   padding-left: 80px;
+  background-color: #ffffff;
 }
 
 .form-user-name,
@@ -2583,9 +2587,9 @@ body ul {
   width: 460px;
 }
 
-.form-container-up textarea[type='text'] {
+.form-container-up textarea {
   width: 460px;
-  height: 114px;
+  min-height: 114px;
   margin: 0;
   margin-top: 11px;
   padding: 0;
@@ -2625,7 +2629,7 @@ body ul {
   border-radius: 5px/3px;
 }
 
-.popap-map {
+.popup-map {
   display: none;
   position: fixed;
   top: 68px;
@@ -2638,8 +2642,8 @@ body ul {
   z-index: 20;
 }
 
-.popap-cart {
-  /* display: none; */
+.popup-cart {
+  display: block;
   position: fixed;
   top: 411px;
   left: 50%;
@@ -2674,6 +2678,7 @@ body ul {
 }
 
 .cart-container-up::before {
+  display:block;
   content: "";
   position: absolute;
   top: 48px;

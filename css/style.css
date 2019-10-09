@@ -85,12 +85,10 @@ body ul {
 .header {
   width: auto;
   min-height: 320px;
-
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-
   background-color: #f4f7f9;
 }
 
@@ -341,6 +339,7 @@ body ul {
   flex-direction: column;
   min-width: 270px;
   margin-left: 65px;
+  margin-bottom: 39px;
 }
 
 .header-phone {
@@ -571,9 +570,7 @@ body ul {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 940px;
-  min-height: 60px;
   margin: 0;
-  margin-top: 39px;
   padding: 0;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -1348,7 +1345,7 @@ body ul {
   min-width: 240px;
   min-height: 62px;
   padding-top: 14px;
-  padding-right: 120px;
+  padding-right: 24px;
   padding-bottom: 15px;
   padding-left: 24px;
   font-size: 21px;
@@ -1642,8 +1639,6 @@ body ul {
   background-color: #ba2732;
 }
 
-/* Здесь начинается стилизация каталога */
-
 .catalog {
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
@@ -1756,6 +1751,7 @@ body ul {
 .catalog-title {
   width: 940px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 30px;
   padding-right: 27px;
@@ -1775,7 +1771,7 @@ body ul {
 
 .catalog-filter h3 {
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 11px;
   padding-top: 10px;
   padding-right: 18px;
   padding-bottom: 10px;
@@ -1791,7 +1787,7 @@ body ul {
 
 .catalog-filter-price {
   margin: 0;
-  margin-top: 11px;
+  margin-bottom: 16px;
   padding: 0;
   padding-bottom: 25px;
   border: none;
@@ -1887,7 +1883,7 @@ body ul {
 
 .catalog-filter-productions {
   margin: 0;
-  margin-top: 16px;
+  margin-bottom: 19px;
   padding: 0;
   border: none;
   border-bottom: 1px solid #e5e5e5;
@@ -1972,7 +1968,6 @@ body ul {
 
 .catalog-filter-power {
   margin: 0;
-  margin-top: 18px;
   padding: 0;
   border: none;
 }
@@ -2087,7 +2082,7 @@ body ul {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding-top: 10px;
   padding-right: 18px;
   padding-bottom: 10px;
@@ -2145,7 +2140,8 @@ body ul {
   text-decoration: underline solid #ee3643
 }
 
-.catalog-sort-type a:focus {
+.catalog-sort-type a:focus,
+.catalog-sort-type .sort-link-active {
   color: #ee3643;
   text-decoration: none
 }
@@ -2154,7 +2150,8 @@ body ul {
   fill: #000000;
 }
 
-.sort-direction-up:focus svg path {
+.sort-direction-up:focus svg path,
+.sort-link-active svg path {
   fill: #ee3643;
 }
 
@@ -2173,6 +2170,10 @@ body ul {
   width: 700px;
   margin: 0;
   padding: 0;
+}
+
+.catalog-sort-perforators .good-item:nth-child(-n+4) {
+  margin-top: 0px;
 }
 
 .catalog-sort-perforators .good-item:nth-child(3n) {
@@ -2422,7 +2423,7 @@ body ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 219px;
+  min-width: 219px;
   margin: 0;
   padding: 0;
   padding-left: 73px;
@@ -2501,12 +2502,13 @@ body ul {
 }
 
 .popup-write-us {
+  display: none;
   position: fixed;
-  top: 120px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 620px;
   min-height: 430px;
-  margin-left: -310px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -2630,26 +2632,26 @@ body ul {
 }
 
 .popup-map {
-  display: none;
+  display: block;
   position: fixed;
-  top: 68px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 940px;
   min-height: 446px;
-  margin-left: -470px;
   background-color: #f4f8f9;
   box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);
   z-index: 20;
 }
 
 .popup-cart {
-  display: block;
+  display: none;
   position: fixed;
-  top: 411px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 620px;
   min-height: 282px;
-  margin-left: -310px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   line-height: 30px;

@@ -151,7 +151,7 @@
                   <label for="producer-dewalt">Dewalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="producer" value="hitachi" id="producer-hitachi" disabled>
+                  <input type="checkbox" name="producer" value="hitachi" id="producer-hitachi">
                   <label for="producer-hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -177,7 +177,7 @@
             <h3>Сортировка:</h3>
             <ul class="catalog-sort-type">
               <li>
-                <a href="#">По цене</a>
+                <a class="sort-link-active" href="#">По цене</a>
               </li>
               <li>
                 <a href="#">По типу</a>
@@ -188,7 +188,8 @@
             </ul>
             <ul class="catalog-sort-direction">
               <li>
-                <a class="sort-direction-up" href="#"><span class="visually-hidden">По возрастанию</span>
+                <a class="sort-direction-up sort-link-active" href="#"><span class="visually-hidden">По
+                    возрастанию</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                     <path fill="#c5c5c5" d="M5.5 0L0 10h11z" /></svg>
                 </a>
@@ -211,7 +212,7 @@
               <p class="good-legacy-price">25500 P.</p>
               <p class="good-price">15500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -223,7 +224,7 @@
               <p class="good-legacy-price">30500 P.</p>
               <p class="good-price">25500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -235,7 +236,7 @@
               <p class="good-legacy-price"></p>
               <p class="good-price">12500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -248,7 +249,7 @@
               <p class="good-legacy-price">25500 P.</p>
               <p class="good-price">15500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -260,7 +261,7 @@
               <p class="good-legacy-price">30500 P.</p>
               <p class="good-price">25500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -272,7 +273,7 @@
               <p class="good-legacy-price"></p>
               <p class="good-price">12500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -285,7 +286,7 @@
               <p class="good-legacy-price">25500 P.</p>
               <p class="good-price">15500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -297,7 +298,7 @@
               <p class="good-legacy-price">30500 P.</p>
               <p class="good-price">25500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -309,7 +310,7 @@
               <p class="good-legacy-price"></p>
               <p class="good-price">12500 P.</p>
               <div class="action">
-                <a class="good-buy" href="#">Купить</a>
+                <a class="good-buy" href="user-order.html">Купить</a>
                 <a class="good-bookmark" href="#">В закладки</a>
               </div>
             </li>
@@ -419,21 +420,23 @@
       </div>
     </div>
   </footer>
+
+  <section class="popup-cart">
+    <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+    <div class="cart-container-up">
+      <p>
+        Товар добавлен в корзину!
+      </p>
+    </div>
+    <div class="cart-container-down">
+      <a class="cart-order" href="user-order.html">Оформить заказ</a>
+      <a class="cart-sales" href="catalog.html">Продолжить покупки</a>
+    </div>
+    <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
+
+  </section>
 </body>
 
-<section class="popap-cart">
-  <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
-  <div class="cart-container-up">
-    <p>
-      Товар добавлен в корзину!
-    </p>
-  </div>
-  <div class="cart-container-down">
-    <a class="cart-order" href="#">Оформить заказ</a>
-    <a class="cart-sales" href="#">Продолжить покупки</a>
-  </div>
-  <button class="close-popap" type="button"><span class="visually-hidden">Закрыть</span></button>
 
-</section>
 
 </html>

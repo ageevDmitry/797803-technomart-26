@@ -144,7 +144,7 @@
             <img class="good-img" src="img/perforator-bosch-bfg-9000.jpg" width="218" height="170"
               alt="Перфоратор BOSCH BFG 9000">
           </div>
-          <div class="action">
+          <div class="">
             <a class="good-buy" href="user-order.html">Купить</a>
             <a class="good-bookmark" href="#">В закладки</a>
           </div>
@@ -318,10 +318,10 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#">
+        <a class="popup-map-open" href="#">
           <img class="contacts-map" src="img/map.png" width="300" height="158" alt="Карта проезда">
         </a>
-        <a class="contacts-write-us" href="#">Заблудились? Напишите нам!</a>
+        <a class="contacts-write-us popup-write-us-open" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
@@ -404,32 +404,35 @@
         <div class="form-user-name">
           <p>Ваше имя:</p>
           <label class="visually-hidden" for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="user-name" type="text" name="login" value="" placeholder="Имя Фамилия">
         </div>
         <div class="form-user-mail">
           <p>Ваш e-mail:</p>
           <label class="visually-hidden" for="user-mail">Ваш e-mail:</label>
-          <input  id="user-mail" type="text" name="mail" value="" placeholder="email@example.com">
+          <input id="user-mail" type="text" name="mail" value="" placeholder="email@example.com">
         </div>
         <div class="form-user-message">
           <p>Текст письма:</p>
           <label class="visually-hidden" for="user-message">Текст письма:</label>
-          <textarea  id="user-message" name="message" placeholder="В свободной форме" rows="4"></textarea>
+          <textarea id="user-message" name="message" placeholder="В свободной форме" rows="4"></textarea>
         </div>
       </div>
       <div class="form-container-down">
         <button class="send-message" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="close-popup popup-write-us-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
   <section class="popup-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <img src="img/map-popup.png" width="940" height="446"
       alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="close-popup popup-map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+
+  <script src="js/script-index.js"></script>
+
 </body>
 
 </html>

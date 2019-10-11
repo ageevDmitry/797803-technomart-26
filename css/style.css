@@ -216,7 +216,7 @@ body ul {
 }
 
 .header-bookmarks::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 12px;
@@ -247,7 +247,7 @@ body ul {
 }
 
 .header-cart::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 12px;
@@ -356,7 +356,7 @@ body ul {
 }
 
 .header-phone::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 10px;
@@ -553,7 +553,7 @@ body ul {
 }
 
 .header-user-orders::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 7px;
@@ -699,7 +699,7 @@ body ul {
 
 .features-list-upper a::before,
 .features-list-down a::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 0px;
@@ -728,7 +728,7 @@ body ul {
 }
 
 .feature-materials::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 31px;
@@ -746,7 +746,7 @@ body ul {
 }
 
 .feature-tools::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 33px;
@@ -764,7 +764,7 @@ body ul {
 }
 
 .feature-technique::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 31px;
@@ -791,7 +791,7 @@ body ul {
   position: absolute;
   bottom: 36px;
   left: 295px;
-  z-index: 20;
+  z-index: 5;
   font-size: 0;
 }
 
@@ -809,7 +809,7 @@ body ul {
 }
 
 .control-left::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -108px;
@@ -822,7 +822,7 @@ body ul {
 }
 
 .control-rigth::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -108px;
@@ -939,7 +939,7 @@ body ul {
 }
 
 .feature-sales::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 27px;
@@ -957,7 +957,7 @@ body ul {
 }
 
 .feature-delivery::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 32px;
@@ -1064,7 +1064,7 @@ body ul {
 }
 
 .good-flag-new::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -2px;
@@ -1076,23 +1076,15 @@ body ul {
   background-position: 0 0;
 }
 
+.img-container {
+  display: block;
+  width: 218px;
+  height: 170px;
+}
+
 .good-item:hover {
   box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);
   border: 1px solid #ffffff;
-}
-
-.good-item:hover .action {
-  display: block;
-}
-
-.good-item:hover .img-container {
-  display: none;
-}
-
-.img-container {
-  display: none;
-  width: 218px;
-  height: 170px;
 }
 
 .good-item h3 {
@@ -1141,7 +1133,7 @@ body ul {
 }
 
 .good-price::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -1px;
@@ -1155,7 +1147,7 @@ body ul {
 }
 
 .good-item .action {
-  display: block;
+  display: none;
   top: 0px;
   left: 0px;
   width: 218px;
@@ -1185,7 +1177,7 @@ body ul {
 }
 
 .good-buy::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 11px;
@@ -1213,6 +1205,14 @@ body ul {
 
 .good-buy:active::after {
   opacity: 1;
+}
+
+.good-item:hover .action {
+  display: block;
+}
+
+.good-item:hover .img-container {
+  display: none;
 }
 
 .good-bookmark {
@@ -1323,7 +1323,7 @@ body ul {
 }
 
 .serviсes-slider::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 26px;
@@ -1374,7 +1374,7 @@ body ul {
 }
 
 .delivery::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 25px;
@@ -1387,7 +1387,7 @@ body ul {
 }
 
 .guarantee::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 3px;
@@ -1400,7 +1400,7 @@ body ul {
 }
 
 .credit::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 0px;
@@ -1544,7 +1544,7 @@ body ul {
 }
 
 .delivery-company-list li::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 28px;
@@ -1674,7 +1674,7 @@ body ul {
 }
 
 .breadcrumbs-home a::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 2px;
@@ -1860,7 +1860,7 @@ body ul {
 }
 
 .price-controls::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 19px;
@@ -1932,7 +1932,7 @@ body ul {
 }
 
 .catalog-filter-productions input+label::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -2px;
@@ -2011,7 +2011,7 @@ body ul {
 }
 
 .catalog-filter-power input+label::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -2px;
@@ -2025,7 +2025,7 @@ body ul {
 }
 
 .catalog-filter-power input:checked+label::after {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 5px;
@@ -2182,7 +2182,7 @@ body ul {
 }
 
 .catalog-sort-perforators .good-item:nth-child(3)::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: -2px;
@@ -2517,7 +2517,7 @@ body ul {
   background-color: #ffffff;
   border-top: 7px solid #ff5357;
   box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);
-  z-index: 20;
+  z-index: 10;
 }
 
 .close-popup {
@@ -2533,7 +2533,7 @@ body ul {
 }
 
 .close-popup::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 2px;
@@ -2583,7 +2583,16 @@ body ul {
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
-  border-radius: 2px;
+  border-radius: 3px;
+}
+
+.form-container-up input[type='text']:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.form-container-up input[type='text']:focus {
+  outline: 0;
+  border: 2px solid #ee3643;
 }
 
 .form-user-message {
@@ -2607,6 +2616,16 @@ body ul {
   border-radius: 2px;
   resize: none;
 }
+
+.form-container-up textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.form-container-up textarea:focus {
+  outline: 0;
+  border: 2px solid #ee3643;
+}
+
 
 .form-container-down {
   width: auto;
@@ -2642,7 +2661,48 @@ body ul {
   min-height: 446px;
   background-color: #f4f8f9;
   box-shadow: 0px 10px 25px 0px rgba(51, 51, 51, 0.5);
-  z-index: 20;
+  z-index: 15;
+}
+
+.popup-map iframe {
+  position: relative;
+  z-index: 17;
+
+  border: none;
+}
+
+.popup-map .map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 16;
+}
+
+.popup-map-close {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  top: 7px;
+  right: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.popup-map-close::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  z-index: 18;
 }
 
 .popup-cart {
@@ -2681,7 +2741,7 @@ body ul {
 }
 
 .cart-container-up::before {
-  display:block;
+  display: block;
   content: "";
   position: absolute;
   top: 48px;
@@ -2747,15 +2807,14 @@ body ul {
 @keyframes bounce {
   0% {
     transform: translate(-50%, -2000px);
-
   }
 
   70% {
-    transform: translateY(-50%, 30px);
+    transform: translate(-50%, 30px);
   }
 
   90% {
-    transform: translateY(-50%, -100px);
+    transform: translate(-50%, -10px);
   }
 
   100% {
@@ -2774,25 +2833,25 @@ body ul {
   50%,
   70%,
   90% {
-    transform: translateX(-10%);
+    transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10%);
+    transform: translateX(10px);
   }
-}
-
-.popup-error {
-  animation: shake 0.6s;
 }
 
 .popup-show {
   display: block;
 
   animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
 
 .visually-hidden:not(:focus):not(:active),

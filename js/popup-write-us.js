@@ -46,7 +46,7 @@
         }
     });
 
-      wtiteUsClosePopup.addEventListener("click", function (evt) {
+      writeUsClosePopup.addEventListener("click", function (evt) {
         evt.preventDefault();
         writeUsPopup.classList.remove("popup-show");
         writeUsPopup.classList.remove("popup-eror");

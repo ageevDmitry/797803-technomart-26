@@ -2851,6 +2851,8 @@ body ul {
 }
 
 .popup-error {
+  display: block;
+
   animation: shake 0.6s;
 }
 

@@ -49,13 +49,13 @@
       writeUsClosePopup.addEventListener("click", function (evt) {
         evt.preventDefault();
         writeUsPopup.classList.remove("popup-show");
-        writeUsPopup.classList.remove("popup-eror");
+        writeUsPopup.classList.remove("popup-error");
       });
 
       form.addEventListener("submit", function (evt) {
         if (!login.value || !mail.value || !message.value) {
           evt.preventDefault();
-          writeUsPopup.classList.add("popup-eror");
+          writeUsPopup.classList.add("popup-error");
         } else {
           if (isStorageSupportLogin) {
             localStorage.setItem("login", login.value);
@@ -70,7 +70,7 @@
           evt.preventDefault();
           if (writeUsPopup.classList.contains("popup-show")) {
             writeUsPopup.classList.remove("popup-show");
-            writeUsPopup.classList.remove("popup-eror");
+            writeUsPopup.classList.remove("popup-error");
           }
         }
       });

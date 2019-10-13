@@ -1,55 +1,55 @@
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/cuprum.woff') format('woff2'),
-    url('../fonts/cuprum.woff2') format('woff');
+  src: url("../fonts/cuprum.woff") format("woff2"),
+    url("../fonts/cuprum.woff2") format("woff");
 }
 
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/cuprumbold.woff') format('woff2'),
-    url('../fonts/cuprumbold.woff2') format('woff');
+  src: url("../fonts/cuprumbold.woff") format("woff2"),
+    url("../fonts/cuprumbold.woff2") format("woff");
 }
 
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/cuprumitalic.woff') format('woff2'),
-    url('../fonts/cuprumitalic.woff2') format('woff');
+  src: url("../fonts/cuprumitalic.woff") format("woff2"),
+    url("../fonts/cuprumitalic.woff2") format("woff");
 }
 
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/cuprumiboldtalic.woff') format('woff2'),
-    url('../fonts/cuprumiboldtalic.woff2') format('woff');
+  src: url("../fonts/cuprumiboldtalic.woff") format("woff2"),
+    url("../fonts/cuprumiboldtalic.woff2") format("woff");
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/ptsans.woff') format('woff2'),
-    url('../fonts/ptsans.woff2') format('woff');
+  src: url("../fonts/ptsans.woff") format("woff2"),
+    url("../fonts/ptsans.woff2") format("woff");
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/ptsansbold.woff') format('woff2'),
-    url('../fonts/ptsansbold.woff2') format('woff');
+  src: url("../fonts/ptsansbold.woff") format("woff2"),
+    url("../fonts/ptsansbold.woff2") format("woff");
 }
 
 html {
@@ -65,8 +65,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 a {
@@ -95,7 +94,6 @@ body ul {
 .header-upper-container {
   width: 100%;
   min-height: 42px;
-
   background-color: #293449;
 }
 
@@ -103,7 +101,6 @@ body ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
@@ -144,6 +141,7 @@ body ul {
   min-height: 42px;
   margin: 0;
   padding-left: 47px;
+  padding-right: 10px;
   font-family: inherit;
   background-position: 15px 10px;
   background-repeat: no-repeat;
@@ -179,27 +177,27 @@ body ul {
   display: none;
 }
 
-.header-search input[type='search']::placeholder {
+.header-search input[type="search"]::placeholder {
   color: #ffffff;
 }
 
-.header-search input[type='search']::-webkit-input-placeholder {
+.header-search input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type='search']:-moz-placeholder {
+.header-search input[type="search"]:-moz-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type='search']::-moz-placeholder {
+.header-search input[type="search"]::-moz-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type='search']:-ms-input-placeholder {
+.header-search input[type="search"]:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.header-search input[type='search']::-ms-input-placeholder {
+.header-search input[type="search"]::-ms-input-placeholder {
   color: #ffffff;
 }
 
@@ -229,6 +227,10 @@ body ul {
   opacity: 0.3;
 }
 
+.header-bookmark-added {
+  background-color: #ee3642;
+}
+
 .header-cart {
   display: block;
   position: relative;
@@ -242,7 +244,7 @@ body ul {
   color: #ffffff;
 }
 
-.catalog-header-cart {
+.header-cart-added {
   background-color: #ee3642;
 }
 
@@ -305,7 +307,6 @@ body ul {
 .header-down-container {
   width: 100%;
   min-height: 278px;
-
   background-color: #f4f7f9;
 }
 
@@ -422,11 +423,9 @@ body ul {
   display: block;
   width: 150px;
   height: 45px;
-
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -655,7 +654,7 @@ body ul {
   margin-right: 20px;
   margin-bottom: 20px;
   padding-top: 20px;
-  padding-right: 139px;
+  padding-right: 141px;
   padding-bottom: 23px;
   padding-left: 22px;
   z-index: 1;
@@ -665,9 +664,9 @@ body ul {
   content: "";
   position: absolute;
   top: 0px;
-  right: -14px;
-  width: 74px;
-  height: 63px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/flag-new.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -681,7 +680,7 @@ body ul {
 .features-list-down a {
   display: block;
   position: relative;
-  min-width: 135px;
+  min-width: 126px;
   min-height: 38px;
   margin-top: 13px;
   margin-left: 1px;
@@ -802,7 +801,7 @@ body ul {
   height: 10px;
   margin-right: 10px;
   vertical-align: top;
-  background-color: transparent;
+  background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -839,7 +838,6 @@ body ul {
   padding: 0;
   padding-top: 24px;
   padding-left: 25px;
-
   list-style: none;
 }
 
@@ -924,9 +922,9 @@ body ul {
   min-height: 123px;
   margin-bottom: 20px;
   padding-top: 20px;
-  padding-right: 139px;
+  padding-right: 142px;
   padding-bottom: 22px;
-  padding-left: 22px;
+  padding-left: 23px;
 }
 
 .features-list-down li:last-child {
@@ -975,7 +973,7 @@ body ul {
   padding: 0 10px;
   padding-top: 53px;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .popular-goods-container,
@@ -990,7 +988,7 @@ body ul {
   padding-right: 24px;
   padding-left: 28px;
   padding-bottom: 27px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   background-color: #f9f5f0;
 }
 
@@ -1068,9 +1066,9 @@ body ul {
   content: "";
   position: absolute;
   top: -2px;
-  right: -15px;
-  width: 74px;
-  height: 63px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/flag-new.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1166,7 +1164,7 @@ body ul {
   padding-right: 44px;
   padding-bottom: 7px;
   padding-left: 49px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -1211,7 +1209,16 @@ body ul {
   display: block;
 }
 
+
+.good-item:focus .action {
+  display: block;
+}
+
 .good-item:hover .img-container {
+  display: none;
+}
+
+.good-item:focus .img-container {
   display: none;
 }
 
@@ -1222,7 +1229,7 @@ body ul {
   padding-left: 34px;
   padding-bottom: 7px;
   padding-right: 27px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
@@ -1245,7 +1252,7 @@ body ul {
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 20px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .productions-list {
@@ -1355,6 +1362,7 @@ body ul {
   background-color: #32425c;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
+  cursor: pointer;
 }
 
 .serviсes-slider-controls label:hover {
@@ -1392,7 +1400,7 @@ body ul {
   position: absolute;
   top: 3px;
   left: 240px;
-  width: 465px;
+  width: 400px;
   height: 285px;
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
@@ -1415,15 +1423,10 @@ body ul {
 .serviсes h3 {
   margin: 0;
   padding: 0;
-
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
-}
-
-.garantee-title {
-  font-style: italic;
 }
 
 .serviсes p {
@@ -1432,7 +1435,7 @@ body ul {
   padding-top: 26px;
   width: 400px;
   min-height: 40px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -1494,11 +1497,10 @@ body ul {
   display: flex;
   justify-content: space-between;
   width: 960px;
-  min-height: 536px;
   margin: 0 auto;
   padding: 0px 10px;
   padding-top: 79px;
-  padding-bottom: 60px;
+  padding-bottom: 87px;
 }
 
 .info-company {
@@ -1518,7 +1520,7 @@ body ul {
   margin: 0;
   margin-top: 26px;
   padding: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1580,7 +1582,7 @@ body ul {
 }
 
 .delivery-company-list p {
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000000
@@ -1588,7 +1590,6 @@ body ul {
 
 .contacts {
   width: 300px;
-  min-height: 368px;
 }
 
 .contacts h2 {
@@ -1606,8 +1607,7 @@ body ul {
   padding: 0;
   width: 180px;
   min-height: 36px;
-
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1641,7 +1641,7 @@ body ul {
 }
 
 .catalog {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .breadcrumbs {
@@ -1758,7 +1758,7 @@ body ul {
   padding-right: 27px;
   padding-bottom: 29px;
   padding-left: 27px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -1826,7 +1826,6 @@ body ul {
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #00ca74;
 }
 
@@ -1834,7 +1833,6 @@ body ul {
   position: absolute;
   width: 20px;
   height: 20px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1870,11 +1868,11 @@ body ul {
   background-color: #444444;
 }
 
-.price-controls input[type='text'] {
+.price-controls input[type="text"] {
   width: 95px;
   height: 38px;
   text-align: center;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   background-color: #f7f3ec;
@@ -1914,8 +1912,8 @@ body ul {
   padding: 0;
 }
 
-.catalog-filter-productions input[type='checkbox'],
-.catalog-filter-power input[type='radio'] {
+.catalog-filter-productions input[type="checkbox"],
+.catalog-filter-power input[type="radio"] {
   display: none;
 }
 
@@ -1997,7 +1995,7 @@ body ul {
   padding: 0;
 }
 
-.catalog-filter-power input[type='checkbox'] {
+.catalog-filter-power input[type="checkbox"] {
   display: none;
 }
 
@@ -2173,25 +2171,12 @@ body ul {
   padding: 0;
 }
 
-.catalog-sort-perforators .good-item:nth-child(-n+3) {
+.catalog-sort-perforators .good-item:nth-child(-n + 3) {
   margin-top: 0px;
 }
 
 .catalog-sort-perforators .good-item:nth-child(3n) {
   margin-right: 0px;
-}
-
-.catalog-sort-perforators .good-item:nth-child(3)::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -15px;
-  width: 74px;
-  height: 63px;
-  background-image: url("../img/flag-new.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .catalog-pagination {
@@ -2254,7 +2239,7 @@ body ul {
 }
 
 .perforator-info {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -2276,7 +2261,7 @@ body ul {
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -2297,7 +2282,6 @@ body ul {
 .footer-upper-container {
   width: auto;
   min-height: 193px;
-
   background-color: #32425c;
 }
 
@@ -2415,7 +2399,7 @@ body ul {
 }
 
 .footer-copyright {
-  width: 233px;
+  width: 231px;
   margin: 0;
   padding: 0;
 }
@@ -2424,20 +2408,22 @@ body ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  min-width: 219px;
+  min-width: 230px;
   margin: 0;
   padding: 0;
-  padding-left: 73px;
+  padding-left: 71px;
 }
 
 .social-link-list li {
-  width: 45px;
+  margin-right: 5px;
+}
+
+.social-link-list li:last-child {
+  margin-right: 0px;
 }
 
 .social-link-list a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 40px;
   height: 40px;
   background-color: #212a3b;
@@ -2470,23 +2456,19 @@ body ul {
 .footer-dev-list {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 319px;
+  width: 300px;
   margin: 0;
   padding: 0;
 }
 
 .footer-feedback {
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 180px;
+  width: 140px;
 }
 
 .footer-design {
-  padding-right: 14px;
-  padding-left: 27px;
-  width: 138px;
+  width: 112px;
+  margin-left: 48px;
 }
 
 .footer-dev-list a {
@@ -2505,12 +2487,12 @@ body ul {
 .popup-write-us {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 250px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -230px;
   width: 620px;
   min-height: 430px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -2538,8 +2520,8 @@ body ul {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2571,7 +2553,7 @@ body ul {
   font-weight: 700;
 }
 
-.form-container-up input[type='text'] {
+.form-container-up input[type="text"] {
   width: 220px;
   height: 38px;
   margin: 0;
@@ -2579,18 +2561,18 @@ body ul {
   padding: 0;
   padding-right: 12px;
   padding-left: 12px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
 }
 
-.form-container-up input[type='text']:hover {
+.form-container-up input[type="text"]:hover {
   border: 2px solid #b5b5b5;
 }
 
-.form-container-up input[type='text']:focus {
+.form-container-up input[type="text"]:focus {
   outline: 0;
   border: 2px solid #ee3643;
 }
@@ -2609,7 +2591,7 @@ body ul {
   padding-right: 12px;
   padding-bottom: 8px;
   padding-left: 12px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
@@ -2625,7 +2607,6 @@ body ul {
   outline: 0;
   border: 2px solid #ee3643;
 }
-
 
 .form-container-down {
   width: auto;
@@ -2649,14 +2630,15 @@ body ul {
   background-color: #ee3643;
   border: #ee3643;
   border-radius: 5px/3px;
+  cursor: pointer;
 }
 
 .popup-map {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 120px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -470px;
   width: 940px;
   min-height: 446px;
   background-color: #f4f8f9;
@@ -2664,18 +2646,21 @@ body ul {
   z-index: 15;
 }
 
+.popup-map .map-container {
+  position: relative;
+  display: flex;
+  min-height: 446px;
+}
+
 .popup-map iframe {
   position: relative;
   z-index: 17;
-
   border: none;
 }
 
-.popup-map .map-container {
+.popup-map img {
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 16;
 }
 
 .popup-map-close {
@@ -2708,12 +2693,12 @@ body ul {
 .popup-cart {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 250px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -310px;
   width: 620px;
   min-height: 282px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -2761,7 +2746,7 @@ body ul {
   flex-wrap: wrap;
   padding-top: 37px;
   padding-right: 80px;
-  padding-bottom: 32px;
+  padding-bottom: 37px;
   padding-left: 80px;
   background-color: #f4f4f4;
 }
@@ -2806,23 +2791,24 @@ body ul {
 
 @keyframes bounce {
   0% {
-    transform: translate(-50%, -2000px);
+    transform: translateY(-2000px);
   }
 
   70% {
-    transform: translate(-50%, 30px);
+    transform: translateY(30px);
   }
 
   90% {
-    transform: translate(-50%, -10px);
+    transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(-50%, 0);
+    transform: translateY(0);
   }
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
@@ -2846,29 +2832,24 @@ body ul {
 
 .popup-show {
   display: block;
-
   animation: bounce 0.6s;
 }
 
 .popup-error {
   display: block;
-
   animation: shake 0.6s;
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;

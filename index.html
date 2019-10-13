@@ -103,8 +103,8 @@
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <div class="slider-container">
           <div class="slider-controls">
-            <label class="control-left" for="product-1">Первый</label>
-            <label class="control-rigth" for="product-2">Второй</label>
+            <label class="control-left" for="product-1" tabindex="0">Первый</label>
+            <label class="control-rigth" for="product-2" tabindex="0">Второй</label>
           </div>
           <ul class="slider-list">
             <li class="slider-item slide" id="slide1">
@@ -138,20 +138,20 @@
         <a href="#">Все популярные товары</a>
       </div>
       <ul class="goods-list">
-        <li class="good-item">
+        <li class="good-item" tabindex="0">
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <div class="img-container">
             <img class="good-img" src="img/perforator-bosch-bfg-9000.jpg" width="218" height="170"
               alt="Перфоратор BOSCH BFG 9000">
           </div>
-          <div class="action">
-            <a class="good-buy popup-cart-open" href="user-order.html">Купить</a>
-            <a class="good-bookmark" href="#">В закладки</a>
+          <div class="action" tabindex="0">
+            <a class="good-buy popup-cart-open" href="user-order.html" tabindex="0">Купить</a>
+            <a class="good-bookmark" href="#" tabindex="0">В закладки</a>
           </div>
           <p class="good-legacy-price">32500 P.</p>
           <p class="good-price">25500 P.</p>
         </li>
-        <li class="good-item">
+        <li class="good-item" tabindex="0">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <div class="img-container">
             <img class="good-img" src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
@@ -164,7 +164,7 @@
             <a class="good-bookmark" href="#">В закладки</a>
           </div>
         </li>
-        <li class="good-item">
+        <li class="good-item" tabindex="0">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <div class="img-container">
             <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -176,7 +176,7 @@
             <a class="good-bookmark" href="#">В закладки</a>
           </div>
         </li>
-        <li class="good-item good-flag-new">
+        <li class="good-item good-flag-new" tabindex="0">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <div class="img-container">
             <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -199,43 +199,48 @@
       <ul class="productions-list">
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/bosch.png" width="126" height="37" alt="Логотип компании «BOSCH»">
+            <img class="production-img" src="img/bosch-brand.png" width="126" height="37"
+              alt="Логотип компании «BOSCH»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/makita.png" width="123" height="40" alt="Логотип компании «MAKITA»">
+            <img class="production-img" src="img/makita-brand.png" width="123" height="40"
+              alt="Логотип компании «MAKITA»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/dewalt.png" width="146" height="44" alt="Логотип компании «DEWALT»">
+            <img class="production-img" src="img/dewalt-brand.png" width="146" height="44"
+              alt="Логотип компании «DEWALT»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/interskol.png" width="200" height="88"
+            <img class="production-img" src="img/interskol-brand.png" width="200" height="88"
               alt="Логотип компании «Интерскол»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/hitachi.png" width="169" height="31" alt="Логотип компании «HITACHI»">
+            <img class="production-img" src="img/hitachi-brand.png" width="169" height="31"
+              alt="Логотип компании «HITACHI»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/lg.png" width="121" height="73" alt="Логотип компании «LG»">
+            <img class="production-img" src="img/lg-brand.png" width="121" height="73" alt="Логотип компании «LG»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/aeg.png" width="151" height="96" alt="Логотип компании «AEG»">
+            <img class="production-img" src="img/aeg-brand.png" width="151" height="96" alt="Логотип компании «AEG»">
           </a>
         </li>
         <li class="production-item">
           <a href="#">
-            <img class="production-img" src="img/metabo.png" width="204" height="69" alt="Логотип компании «Metabo»">
+            <img class="production-img" src="img/metabo-brand.png" width="204" height="69"
+              alt="Логотип компании «Metabo»">
           </a>
         </li>
       </ul>
@@ -254,13 +259,13 @@
           <input class="visually-hidden" type="radio" id="serviсes-credit" name="button">
           <ul class="serviсes-slider-controls">
             <li>
-              <label class="control-delivery" for="serviсes-delivery">Доставка</label>
+              <label class="control-delivery" for="serviсes-delivery" tabindex="0">Доставка</label>
             </li>
             <li>
-              <label class="control-guarantee" for="serviсes-guarantee">Гарантия</label>
+              <label class="control-guarantee" for="serviсes-guarantee" tabindex="0">Гарантия</label>
             </li>
             <li>
-              <label class="control-credit" for="serviсes-credit">Кредит</label>
+              <label class="control-credit" for="serviсes-credit" tabindex="0">Кредит</label>
             </li>
           </ul>
           <ul class="serviсes-slider-list">
@@ -426,11 +431,11 @@
 
   <section class="popup-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-      width="940" height="446" allowfullscreen>
-    </iframe>
     <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="940" height="446" allowfullscreen>
+      </iframe>
       <img src="img/map-popup.png" width="940" height="446"
         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </div>

@@ -81,6 +81,21 @@ body ul {
   list-style: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   width: auto;
   min-height: 320px;
@@ -463,6 +478,7 @@ body ul {
 }
 
 .login-container {
+  position: relative;
   width: 300px;
   padding-top: 12px;
   padding-right: 67px;
@@ -499,13 +515,17 @@ body ul {
 
 .header-user-out {
   display: block;
-  position: relative;
+  position: absolute;
+  top: 11px;
+  right: 9px;
+  width: 24px;
+  height: 22px;
 }
 
 .header-user-out svg {
   position: absolute;
-  top: -19px;
-  right: -57px;
+  top: 3px;
+  right: 1px;
 }
 
 .header-user-out:hover path {
@@ -1621,7 +1641,7 @@ body ul {
   display: block;
   margin-top: 36px;
   padding-top: 10px;
-  padding-right: 59px;
+  padding-right: 58px;
   padding-bottom: 10px;
   padding-left: 64px;
   font-size: 14px;
@@ -1670,17 +1690,22 @@ body ul {
 }
 
 .breadcrumbs-home a {
-  position: relative;
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0px;
+  left: -2px;
 }
 
 .breadcrumbs-home a::before {
   display: block;
   content: "";
   position: absolute;
-  top: 2px;
-  left: -2px;
-  width: 22px;
-  height: 22px;
+  top: 3px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1818,12 +1843,18 @@ body ul {
 }
 
 .range-controls .scale {
+  position: absolute;
+  top: 39px;
+  left: 23px;
   width: 180px;
   height: 2px;
   background: #d7dcde;
 }
 
 .range-controls .bar {
+  position: absolute;
+  top: 0px;
+  left: 10px;
   width: 80%;
   height: 2px;
   background: #00ca74;
@@ -1831,6 +1862,7 @@ body ul {
 
 .range-toggle {
   position: absolute;
+  top: 30px;
   width: 20px;
   height: 20px;
   background: #ababab;
@@ -1838,6 +1870,7 @@ body ul {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  z-index: 1;
 }
 
 .range-toggle-min {
@@ -1912,9 +1945,8 @@ body ul {
   padding: 0;
 }
 
-.catalog-filter-productions input[type="checkbox"],
-.catalog-filter-power input[type="radio"] {
-  display: none;
+.catalog-filter-productions input:focus+label {
+  color: #b5b5b5;
 }
 
 .catalog-filter-productions label {
@@ -1995,8 +2027,8 @@ body ul {
   padding: 0;
 }
 
-.catalog-filter-power input[type="checkbox"] {
-  display: none;
+.catalog-filter-power input:focus+label {
+  color: #b5b5b5;
 }
 
 .catalog-filter-power label {
@@ -2209,6 +2241,10 @@ body ul {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+.catalog-pagination .pagination-back {
+  display: none;
 }
 
 .catalog-pagination .pagination-current {
@@ -2653,7 +2689,7 @@ body ul {
 }
 
 .popup-map iframe {
-  position: relative;
+  position: absolute;
   z-index: 17;
   border: none;
 }
@@ -2671,18 +2707,18 @@ body ul {
   border: 0;
   top: 7px;
   right: 7px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .popup-map-close::before {
   display: block;
   content: "";
-  position: absolute;
+  position: relative;
   top: 2px;
   left: 2px;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2838,19 +2874,4 @@ body ul {
 .popup-error {
   display: block;
   animation: shake 0.6s;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }

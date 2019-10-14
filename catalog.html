@@ -6,6 +6,8 @@
   <title>Техномарт.Каталог</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -135,24 +137,24 @@
               <legend>Производители:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="producer" value="bosch" id="producer-bosch" checked>
-                  <label for="producer-bosch" tabindex="0">Bosch</label>
+                  <input class ="visually-hidden" type="checkbox" name="producer" value="bosch" id="producer-bosch" tabindex="0" aria-label ="Bosch" checked>
+                  <label for="producer-bosch">Bosch</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="producer" value="interskol" id="producer-interskol">
-                  <label for="producer-interskol" tabindex="0">Интерскол</label>
+                  <input class ="visually-hidden" type="checkbox" name="producer" value="interskol" id="producer-interskol" tabindex="0" aria-label ="Интерскол">
+                  <label for="producer-interskol">Интерскол</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="producer" value="makita" id="producer-makita" checked>
-                  <label for="producer-makita" tabindex="0">Makita</label>
+                  <input class ="visually-hidden" type="checkbox" name="producer" value="makita" id="producer-makita" tabindex="0" aria-label ="Makita" checked>
+                  <label for="producer-makita">Makita</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="producer" value="dewalt" id="producer-dewalt">
-                  <label for="producer-dewalt" tabindex="0">Dewalt</label>
+                  <input class ="visually-hidden" type="checkbox" name="producer" value="dewalt" id="producer-dewalt" tabindex="0" aria-label ="Dewalt">
+                  <label for="producer-dewalt">Dewalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="producer" value="hitachi" id="producer-hitachi">
-                  <label for="producer-hitachi" tabindex="0">Hitachi</label>
+                  <input class ="visually-hidden" type="checkbox" name="producer" value="hitachi" id="producer-hitachi" tabindex="0" aria-label ="Hitachi">
+                  <label for="producer-hitachi" >Hitachi</label>
                 </li>
               </ul>
             </fieldset>
@@ -160,12 +162,12 @@
               <legend>Питание:</legend>
               <ul>
                 <li>
-                  <input type="radio" name="power" value="battery" id="power-battery" checked>
-                  <label for="power-battery" tabindex="0">Аккумуляторные</label>
+                  <input class ="visually-hidden" type="radio" name="power" value="battery" id="power-battery" tabindex="0" aria-label ="Аккумуляторные" checked>
+                  <label for="power-battery" >Аккумуляторные</label>
                 </li>
                 <li>
-                  <input type="radio" name="power" value="network" id="power-network" >
-                  <label for="power-network" tabindex="0">Сетевые</label>
+                  <input class ="visually-hidden" type="radio" name="power" value="network" id="power-network" tabindex="0" aria-label ="Сетевые">
+                  <label for="power-network" >Сетевые</label>
                 </li>
               </ul>
             </fieldset>
@@ -317,7 +319,7 @@
           </ul>
           <ul class="catalog-pagination">
             <li>
-              <a class="pagination-back visually-hidden" href="#">Предыдущая</a>
+              <a class="pagination-back" href="#">Предыдущая</a>
             </li>
             <li class="pagination-current">1</li>
             <li>

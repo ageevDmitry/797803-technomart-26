@@ -2,7 +2,7 @@
 
 (function () {
 
-  var mapPopup = document.querySelector( ".popup-map ");
+  var mapPopup = document.querySelector( ".popup-map");
   var mapOpenPopup = document.querySelector( ".popup-map-open");
   var mapClosePopup = document.querySelector( ".popup-map-close");
 

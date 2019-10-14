@@ -2,7 +2,7 @@
 
 (function () {
 
-  var cartPopup = document.querySelector(".popup-cart ");
+  var cartPopup = document.querySelector(".popup-cart");
   var cartClosePopup = document.querySelector(".popup-cart-close");
   var goodsListArr = document.querySelectorAll(".good-item");
 
@@ -23,7 +23,7 @@
   });
 
   function addLink (item) {
-    var cartOpenPopup = item.querySelector( ".popup-cart-open ");
+    var cartOpenPopup = item.querySelector( ".popup-cart-open");
 
     cartOpenPopup.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -31,7 +31,8 @@
     });
   }
 
-  goodsListArr.forEach(function (item) {
-    addLink(item);
-  });
+  for (i = 0; i < goodsListArr.length; i++) {
+    addLink(goodsListArr[i]);
+  }
+
 })();

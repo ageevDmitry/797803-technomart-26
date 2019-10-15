@@ -133,6 +133,14 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 5px 0px 0px #b52933;
 }
 
+.catalog-logo:hover {
+  background-color: #ca2c37;
+}
+
+.catalog-logo:active {
+  background-color: #ba2732;
+}
+
 .header-search {
   position: relative;
   width: 270px;
@@ -1072,8 +1080,9 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
   margin-right: 20px;
   padding: 0;
+  padding-bottom: 85px;
   width: 220px;
-  height: 318px;
+  min-height: 382px;
   border: 1px solid #e4e4e4;
 }
 
@@ -2569,9 +2578,9 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 28px;
+  padding-top: 47px;
   padding-right: 80px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   padding-left: 80px;
   background-color: #ffffff;
 }
@@ -2581,19 +2590,12 @@ input[type="radio"].visually-hidden {
   width: 220px;
 }
 
-.form-container-up p {
-  margin: 0;
-  margin-top: 19px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-weight: 700;
-}
-
 .form-container-up input[type="text"] {
   width: 220px;
   height: 38px;
   margin: 0;
   margin-top: 8px;
+  margin-bottom:  22px;
   padding: 0;
   padding-right: 12px;
   padding-left: 12px;

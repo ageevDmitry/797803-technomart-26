@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт.Главная</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -296,14 +296,14 @@
                 Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.
               </p>
-              <a class="credit-request" href="#">Отправить заявку</a>
+              <a class="credit-request" href="credit.html">Отправить заявку</a>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <div class="info-contacts-container>
+    <div class="info-contacts-container">
       <section class="info-company">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -327,10 +327,10 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a class="popup-map-open" href="#">
+        <a class="popup-map-open" href="map.html">
           <img class="contacts-map" src="img/map.png" width="300" height="158" alt="Карта проезда">
         </a>
-        <a class="contacts-write-us popup-write-us-open" href="#">Заблудились? Напишите нам!</a>
+        <a class="contacts-write-us popup-write-us-open" href="form.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
@@ -411,18 +411,15 @@
     <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-container-up">
         <div class="form-user-name">
-          <p>Ваше имя:</p>
-          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <label for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="login" value="" placeholder="Имя Фамилия">
         </div>
         <div class="form-user-mail">
-          <p>Ваш e-mail:</p>
-          <label class="visually-hidden" for="user-mail">Ваш e-mail:</label>
+          <label for="user-mail">Ваш e-mail:</label>
           <input id="user-mail" type="text" name="mail" value="" placeholder="email@example.com">
         </div>
         <div class="form-user-message">
-          <p>Текст письма:</p>
-          <label class="visually-hidden" for="user-message">Текст письма:</label>
+          <label for="user-message">Текст письма:</label>
           <textarea id="user-message" name="message" placeholder="В свободной форме" rows="4"></textarea>
         </div>
       </div>
